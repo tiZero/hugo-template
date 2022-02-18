@@ -1,0 +1,36 @@
+#+hugo_base_dir: .
+#+hugo_auto_set_lastmod: t
+#+hugo_date_format: %Y-%m-%dT%T
+#+options: author:nil
+#+startup: logdone
+
+* TODO My first post :tag1:tag2:@cat1:
+:PROPERTIES:
+:EXPORT_FILE_NAME: my-first-post
+:END:
+#+begin_description
+This should be a subtitle: the =begin_description= block sets the =description= field in the front matter section
+#+end_description
+This is my post body, with some $\LaTeX$. We can also try some displayed math, as follows
+
+\[\sum_{j,k = 1}^{\infty} \frac{i+j}{2} = \lim_{i\to +\infty} \oint_{\Omega} \dot{s}\]
+
+Choose an /image/ from the static directory
+
+[[/images/test-image.png]]
+* Org Captures
+** DONE Cattura di prova
+CLOSED: [2022-02-14 lun 21:36]
+:PROPERTIES:
+:EXPORT_FILE_NAME: cattura-di-prova
+:END:
+This should be a post with a significant lastmod timestamp.
+** TODO Seconda cattura di prova
+:PROPERTIES:
+:EXPORT_FILE_NAME: seconda-cattura-di-prova
+:END:
+* Footnotes
+* COMMENT Local Variables :ARCHIVE:
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:
