@@ -6,7 +6,6 @@ enableEmoji = true
 enableGitInfo = true
 
 [Params]
-  disable_debug = true
   custom_css = ["css/style.css"]
   favicon = """
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">

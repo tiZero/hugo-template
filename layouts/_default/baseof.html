@@ -87,8 +87,8 @@
             Built with <a href="https://github.com/kaushalmodi/ox-hugo"><b>ox-hugo</b></a> for Emacs/Org-mode.
             {{ with .GitInfo }} <!-- To enable this, put "enableGitInfo = true" in your site config.toml -->
                 {{ $git := . }}
-                    Page created/modified in commit <code>{{- $git.AbbreviatedHash -}}</code> on <b>{{ dateFormat "02-01-2006" $git.AuthorDate }}</b>
-            {{ end }}.
+                    Page created/modified in commit <code>{{- $git.AbbreviatedHash -}}</code> on <b>{{ dateFormat "02-01-2006" $git.AuthorDate }}</b>.
+            {{ end }}
         </small>
         {{ with .Site.Params.footer }}
             {{- . | safeHTML -}}

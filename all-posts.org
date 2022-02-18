@@ -1,7 +1,4 @@
 #+hugo_base_dir: .
-#+hugo_auto_set_lastmod: t
-#+hugo_date_format: %Y-%m-%dT%T
-#+options: author:nil
 #+startup: logdone
 
 * TODO My first post :tag1:tag2:@cat1:
@@ -19,16 +16,19 @@ Choose an /image/ from the static directory
 
 [[/images/test-image.png]]
 * Org Captures
-** DONE Cattura di prova
-CLOSED: [2022-02-14 lun 21:36]
+** DONE Cattura di prova :tag1:
+CLOSED: [2022-02-18 ven 00:14]
 :PROPERTIES:
 :EXPORT_FILE_NAME: cattura-di-prova
 :END:
+#+begin_description
+Descrizione di prova
+#+end_description
 This should be a post with a significant lastmod timestamp.
-** TODO Seconda cattura di prova
-:PROPERTIES:
-:EXPORT_FILE_NAME: seconda-cattura-di-prova
-:END:
+
+Now we try a subheader
+*** This should be a subheader
+Hello world!
 * Footnotes
 * COMMENT Local Variables :ARCHIVE:
 # Local Variables:

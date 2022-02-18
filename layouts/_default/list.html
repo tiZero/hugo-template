@@ -45,30 +45,4 @@
     </ul>
 {{ end }}
 
-{{ if (not ($.Param "disable_debug")) }}
-    <hr>
-    <a id="debug"></a>
-    <h3 id="page-debug">Page (Debug)</h3>
-    {{ partial "debugprint.html" . }}
-    {{ with .Params }}
-        <h3 id="page-params-debug">Page Params (Debug)</h3>
-        {{ partial "debugprint.html" . }}
-    {{ end }}
-    {{ with .Resources }}
-        <h3 id="resource-debug">Resources (Debug)</h3>
-        {{ partial "debugprint.html" . }}
-    {{ end }}
-    <h3 id="file-debug">File Object (Debug)</h3>
-    {{ with .File }}
-        {{ if (ne .Path "") }}
-            {{ partial "debugprint.html" . }}
-        {{ else }}
-            <!-- For pages that don't have an associated content file name,
-                 they only have the .File.UniqueID.
-            -->
-            {{ partial "debugprint.html" (dict "UniqueID" .UniqueID "Path" .Path) }}
-        {{ end }}
-    {{ end }}
-{{ end }}
-
 {{ end }}
