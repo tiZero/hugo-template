@@ -7,15 +7,11 @@ enableGitInfo = true
 
 [Params]
   disable_debug = true
-  intro = ""
   custom_css = ["css/style.css"]
   favicon = """
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" href="/favicon.png">
 """
-
-  [Params.sources]
-    url = "https://github.com/tizero/org-notes"
 
 [markup.goldmark.rederer]
   unsafe = true

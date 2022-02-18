@@ -50,32 +50,7 @@
     <body lang="{{ .Site.Language.Lang }}">
 
         {{ block "top" . }}
-    <!--
-        <div style="float: left;">
-            <small>
-                {{ printf `<span style="font-variant: small-caps;">.Kind</span> (<strong>%s</strong>):` .Kind | safeHTML }}
-                {{ printf `<span style="font-variant: small-caps;">.Type</span> (<strong>%s</strong>) /` .Type | safeHTML }}
-                {{ printf `<span style="font-variant: small-caps;">.Layout</span> (<strong>%s</strong>)` .Layout | safeHTML }}
 
-                <br />
-                {{ $bundle_type := "n/a" }}
-                {{ with .File }}
-                    {{ if (eq .Path "") }}
-                        {{ $bundle_type = `n/a (regular "list" page)` }}
-                    {{ else }}
-                        {{ if (eq .BaseFileName "_index") }}
-                            {{ $bundle_type = "branch" }}
-                        {{ else if (eq .BaseFileName "index") }}
-                            {{ $bundle_type = "leaf" }}
-                        {{ else }}
-                            {{ $bundle_type = "n/a (regular page)" }}
-                        {{ end }}
-                    {{ end }}
-                {{ end }}
-                {{ printf `<span style="font-variant: small-caps;">Bundle</span>: <strong>%s</strong>` $bundle_type | safeHTML }}
-            </small>
-        </div>
-    -->
         {{ with .Site.Taxonomies }}
             <div style="float: right;">
                 [
@@ -101,66 +76,18 @@
                     {{- . | safeHTML -}}
                 </p>
             {{ end }}
-            {{ with .Site.Params.source }}
-                <p>It is <b>updated automatically after each commit</b> to the <a href="{{ .url }}">
-                    <code>{{ .url | replaceRE "^.*/" "" }}</code> repo</a>.
-                    It was last updated on <i>{{ now.Format "Jan 02, 2006 15:04 MST" }}</i>.
-                </p>
-                <ul>
-                    {{ if .org_dir }}
-                        <li>The <i>actual <b>source</b></i>.. <a href="{{ .url }}/tree/{{ .default_branch | default "master" }}/{{ .org_dir }}">Org source dir</a></li>
-                        <li>
-                            <ul>
-                                <li>Below Markdown is exported from Org using <code>ox-hugo</code>.</li>
-                            </ul>
-                        </li>
-                    {{ end }}
-                    {{ if .md_dir }}
-                        <li><a href="{{ .url }}/tree/{{ .default_branch | default "master" }}/{{ .md_dir }}">Markdown source dir</a></li>
-                    {{ end }}
-                </ul>
-            {{ end }}
             <hr>
         </div>
-
-        {{ with .GitInfo }} <!-- To enable this, put "enableGitInfo = true" in your site config.toml -->
-            {{ $git := . }}
-            {{ with site.Params.source }}
-                This page was created/modified in commit <a href="{{ .url }}/commit/{{- $git.Hash -}}">
-                {{- $git.AbbreviatedHash -}}</a> "{{ $git.Subject }}" on <b>{{ dateFormat "2006-01-02" $git.AuthorDate }}</b>.
-            {{ end }}
-        {{ end }}
-
-        {{ with .File }}
-            {{ with .Path }}
-                {{ $path := . }}
-                {{ with site.Params.source }}
-                    {{ if .md_dir }}
-                        <br />
-                        <div style="float: right;">
-                            ✱ <i>Markdown <a href="{{ .url }}/raw/{{ .default_branch | default "master" }}/{{ .md_dir }}/{{ $path }}">
-                            source</a> of this page</i>
-                        </div>
-                        <div style="clear: both;"></div> <!-- Clear floats -->
-                    {{ end }}
-                {{ end }}
-            {{ end }}
-        {{ end }}
-
         {{ end }}               <!-- End of "top" block -->
 
         {{ block "main" . }}{{ end }}
 
         <hr>
-        <small>This site is generated using the
-            {{ with .Site.Params.source.org_dir }}
-                <a href="https://github.com/kaushalmodi/ox-hugo"><b>ox-hugo</b></a> package for Emacs/Org-mode +
-            {{ end }}
-            <a href="https://github.com/kaushalmodi/hugo-bare-min-theme"><code>hugo-bare-min-theme</code></a> + Hugo <b>{{ hugo.Version }}</b>
-            {{ with hugo.CommitHash }}
-                (commit
-                {{ . | replaceRE "^[0-9a-f]{7,}" `<a href="https://github.com/gohugoio/hugo/commit/${0}">${0}</a>` | replaceRE ":chroma-([0-9a-f]{7,})" `, using Chroma commit <a href="https://github.com/alecthomas/chroma/commit/${1}">${1}</a>` | safeHTML -}}
-                )
+        <small>
+            Built with <a href="https://github.com/kaushalmodi/ox-hugo"><b>ox-hugo</b></a> for Emacs/Org-mode.
+            {{ with .GitInfo }} <!-- To enable this, put "enableGitInfo = true" in your site config.toml -->
+                {{ $git := . }}
+                    Page created/modified in commit <code>{{- $git.AbbreviatedHash -}}</code> on <b>{{ dateFormat "02-01-2006" $git.AuthorDate }}</b>
             {{ end }}.
         </small>
         {{ with .Site.Params.footer }}
