@@ -6,29 +6,15 @@
 :EXPORT_FILE_NAME: my-first-post
 :END:
 #+begin_description
-This should be a subtitle: the =begin_description= block sets the =description= field in the front matter section
+This should be a subtitle insertied via the ~description~ field in the front matter section. It is also possible to insert some math? We have added some space before the article begins.
 #+end_description
-This is my post body, with some $\LaTeX$. We can also try some displayed math, as follows
+This is post body, with some $\LaTeX$. We could also displayed some math, as follows
 
 \[\sum_{j,k = 1}^{\infty} \frac{i+j}{2} = \lim_{i\to +\infty} \oint_{\Omega} \dot{s}\]
 
-Choose an /image/ from the static directory
+Choose an from the static directory:
 
 [[/images/test-image.png]]
-* Org Captures
-** DONE Cattura di prova :tag1:
-CLOSED: [2022-02-18 ven 00:14]
-:PROPERTIES:
-:EXPORT_FILE_NAME: cattura-di-prova
-:END:
-#+begin_description
-Descrizione di prova
-#+end_description
-This should be a post with a significant lastmod timestamp.
-
-Now we try a subheader
-*** This should be a subheader
-Hello world!
 * Footnotes
 * COMMENT Local Variables :ARCHIVE:
 # Local Variables:

@@ -7,7 +7,11 @@
 {{ define "main" }}
 
 <div class="post">
-    <h1 class="post-title">{{ .Title }} {{ if .Params.draft }}<code style="color: rgba(0, 0, 0, 0.5);">✱DRAFT✱</code>{{ end }}</h1>
+    <h1 class="post-title">{{ .Title }}
+        {{ if .Params.draft }}
+            <code style="color: rgba(0, 0, 0, 0.5);">✱DRAFT✱</code>
+        {{ end }}
+    </h1>
 
     <!-- Taxonomy debug -->
     {{ $page := . }}
@@ -29,13 +33,16 @@
     {{ end }}
 
     {{ with .Description }}
-        <i>{{ . | markdownify }}</i>
+        <p style="font-size: 12px;">
+            {{ . | markdownify }}
+        </p>
     {{ end }}
     <hr />
 
     {{ partial "header_image.html" . }}
-
-    {{ .Content }}
+    <div style="margin: 40px auto;">
+        {{ .Content }}
+    </div>
 
 </div>
 

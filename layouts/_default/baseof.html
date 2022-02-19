@@ -30,6 +30,7 @@
                 {{ printf "%s | %s" .Title .Site.Title }}
             {{ end }}
         </title>
+
         {{ with .Site.Params.favicon }}
             {{- . | safeHTML -}}
         {{ end }}
@@ -78,16 +79,20 @@
             {{ end }}
             <hr>
         </div>
+
         {{ end }}               <!-- End of "top" block -->
 
         {{ block "main" . }}{{ end }}
 
         <hr>
         <small>
-            Built with <a href="https://github.com/kaushalmodi/ox-hugo"><b>ox-hugo</b></a> for Emacs/Org-mode.
+            Built with <a href="https://github.com/kaushalmodi/ox-hugo"><code>ox-hugo</code></a> for Emacs/Org-mode.
             {{ with .GitInfo }} <!-- To enable this, put "enableGitInfo = true" in your site config.toml -->
                 {{ $git := . }}
-                    Page created/modified in commit <code>{{- $git.AbbreviatedHash -}}</code> on <b>{{ dateFormat "02-01-2006" $git.AuthorDate }}</b>.
+                {{ with site.Params.source }}
+                    Page created/modified in commit <a href="{{ .url }}/commit/{{- $git.Hash -}}">
+                    <code>{{- $git.AbbreviatedHash -}}</code></a> on <b>{{ dateFormat "02-01-2006" $git.AuthorDate }}</b>.
+                {{ end }}
             {{ end }}
         </small>
         {{ with .Site.Params.footer }}

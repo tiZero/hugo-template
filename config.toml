@@ -1,6 +1,8 @@
-baseURL = "http://example.org/"
+baseURL = "https://tizero.github.io/org-notes"
 defaultContentLanguage = "it"
 title = "Org notes"
+
+canonifyURLs = true
 
 enableEmoji = true
 enableGitInfo = true
@@ -11,6 +13,9 @@ enableGitInfo = true
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" href="/favicon.png">
 """
+
+  [Params.source]
+    url = "https://github.com/tiZero/org-notes"
 
 [markup.goldmark.rederer]
   unsafe = true
