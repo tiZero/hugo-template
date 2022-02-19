@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://tizero.github.io/hugo-template/categories/cat1/</loc>
+    <lastmod>2022-02-19T12:33:18+01:00</lastmod>
+  </url><url>
+    <loc>https://tizero.github.io/hugo-template/categories/</loc>
+    <lastmod>2022-02-19T12:33:18+01:00</lastmod>
+  </url><url>
+    <loc>https://tizero.github.io/hugo-template/posts/my-first-post/</loc>
+    <lastmod>2022-02-19T12:33:18+01:00</lastmod>
+  </url><url>
+    <loc>https://tizero.github.io/hugo-template/</loc>
+    <lastmod>2022-02-19T12:33:18+01:00</lastmod>
+  </url><url>
+    <loc>https://tizero.github.io/hugo-template/posts/</loc>
+    <lastmod>2022-02-19T12:33:18+01:00</lastmod>
+  </url><url>
+    <loc>https://tizero.github.io/hugo-template/tags/tag1/</loc>
+    <lastmod>2022-02-19T12:33:18+01:00</lastmod>
+  </url><url>
+    <loc>https://tizero.github.io/hugo-template/tags/tag2/</loc>
+    <lastmod>2022-02-19T12:33:18+01:00</lastmod>
+  </url><url>
+    <loc>https://tizero.github.io/hugo-template/tags/</loc>
+    <lastmod>2022-02-19T12:33:18+01:00</lastmod>
+  </url>
+</urlset>
