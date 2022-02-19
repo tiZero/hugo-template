@@ -6,7 +6,7 @@ tags = ["prova", "matematica"]
 draft = false
 +++
 
-Questo è il corpo della pagina. È possibile inserire della matematica _inline_ direttamente utilizzando la sintassi \\(\LaTeX\\) nel file org.
+Questo è il corpo della pagina. È possibile inserire della matematica _inline_ direttamente utilizzando la sintassi \\(\LaTeX\\) nel file org. Matematica **inline** \\(x^2 + 1 = 0\\).
 
 
 ## Seconda sezione {#seconda-sezione}
