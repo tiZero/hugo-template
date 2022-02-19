@@ -1,4 +1,4 @@
-baseURL = "https://tizero.github.io/org-notes"
+baseURL = "https://tizero.github.io/hugo-template"
 defaultContentLanguage = "it"
 title = "Org notes"
 
@@ -15,7 +15,7 @@ enableGitInfo = true
 """
 
   [Params.source]
-    url = "https://github.com/tiZero/org-notes"
+    url = "https://github.com/tiZero/hugo-template"
 
 [markup.goldmark.rederer]
   unsafe = true
