@@ -6,11 +6,11 @@ tags = ["prova", "matematica"]
 draft = false
 +++
 
-Questo è il corpo della pagina. È possibile inserire della matematica _inline_ direttamente utilizzando la sitassi \\(\LaTeX\\) nel file org.
+Questo è il corpo della pagina. È possibile inserire della matematica _inline_ direttamente utilizzando la sintassi \\(\LaTeX\\) nel file org.
 
 
 ## Seconda sezione {#seconda-sezione}
 
-Matematica a centro della pagina \\[\zeta(s) = \sum\_{n = 1}^{+\infty}\frac{1}{n^s}\\] E qualche immagine di prova utilizzado le impostazione di default
+Matematica a centro della pagina \\[\zeta(s) = \sum\_{n = 1}^{+\infty}\frac{1}{n^s}\\] E qualche immagine di prova utilizzando le impostazioni di default
 
 {{< figure src="/images/2c-u2-triangoli1.svg" >}}

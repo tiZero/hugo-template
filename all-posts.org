@@ -10,10 +10,10 @@ CLOSED: [2022-02-19 sab 15:28]
 #+begin_description
 Descrizione del post: è inserita tramite il blocco ~description~ nel file org. Può essere utilizzata come introduzione o sottotitolo.
 #+end_description
-Questo è il corpo della pagina. È possibile inserire della matematica /inline/ direttamente utilizzando la sitassi $\LaTeX$ nel file org.
+Questo è il corpo della pagina. È possibile inserire della matematica /inline/ direttamente utilizzando la sintassi $\LaTeX$ nel file org.
 
 ** Seconda sezione
-Matematica a centro della pagina \[\zeta(s) = \sum_{n = 1}^{+\infty}\frac{1}{n^s}\] E qualche immagine di prova utilizzado le impostazione di default
+Matematica a centro della pagina \[\zeta(s) = \sum_{n = 1}^{+\infty}\frac{1}{n^s}\] E qualche immagine di prova utilizzando le impostazioni di default
 
 [[/images/2c-u2-triangoli1.svg]]
 * Footnotes

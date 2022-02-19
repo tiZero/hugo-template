@@ -90,7 +90,7 @@
             {{ with .GitInfo }} <!-- To enable this, put "enableGitInfo = true" in your site config.toml -->
                 {{ $git := . }}
                 {{ with site.Params.source }}
-                    Page created/modified in commit <a href="{{ .url }}/commit/{{- $git.Hash -}}">
+                    This page was created/modified in commit <a href="{{ .url }}/commit/{{- $git.Hash -}}">
                     <code>{{- $git.AbbreviatedHash -}}</code></a> on <b>{{ dateFormat "02-01-2006" $git.AuthorDate }}</b>.
                 {{ end }}
             {{ end }}
