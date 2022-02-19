@@ -1,16 +1,16 @@
 +++
-title = "My first post"
-author = ["Ivo Cicchese"]
-description = "This should be a subtitle insertied via the `description` field in the front matter section. It is also possible to insert some math? We have added some space before the article begins."
-tags = ["tag1", "tag2"]
-categories = ["cat1"]
-draft = true
+title = "Pagina di prova"
+description = "Descrizione del post: è inserita tramite il blocco `description` nel file org. Può essere utilizzata come introduzione o sottotitolo."
+date = 2022-02-19T15:28:00+01:00
+tags = ["prova", "matematica"]
+draft = false
 +++
 
-This is post body, with some \\(\LaTeX\\). We could also displayed some math, as follows
+Questo è il corpo della pagina. È possibile inserire della matematica _inline_ direttamente utilizzando la sitassi \\(\LaTeX\\) nel file org.
 
-\\[\sum\_{j,k = 1}^{\infty} \frac{i+j}{2} = \lim\_{i\to +\infty} \oint\_{\Omega} \dot{s}\\]
 
-Choose an from the static directory:
+## Seconda sezione {#seconda-sezione}
 
-{{< figure src="/images/test-image.png" >}}
+Matematica a centro della pagina \\[\zeta(s) = \sum\_{n = 1}^{+\infty}\frac{1}{n^s}\\] E qualche immagine di prova utilizzado le impostazione di default
+
+{{< figure src="/images/2c-u2-triangoli1.svg" >}}
