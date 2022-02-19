@@ -85,7 +85,7 @@
         {{ block "main" . }}{{ end }}
 
         <hr>
-        <small>
+        <p style="font-size: 12px;">
             Built with <a href="https://github.com/kaushalmodi/ox-hugo"><code>ox-hugo</code></a> for Emacs/Org-mode.
             {{ with .GitInfo }} <!-- To enable this, put "enableGitInfo = true" in your site config.toml -->
                 {{ $git := . }}
@@ -94,7 +94,7 @@
                     <code>{{- $git.AbbreviatedHash -}}</code></a> on <b>{{ dateFormat "02-01-2006" $git.AuthorDate }}</b>.
                 {{ end }}
             {{ end }}
-        </small>
+        </p>
         {{ with .Site.Params.footer }}
             {{- . | safeHTML -}}
         {{ end }}
