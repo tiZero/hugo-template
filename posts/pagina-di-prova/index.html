@@ -1,0 +1,90 @@
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=it lang=it>
+<head>
+<link href=https://gmpg.org/xfn/11 rel=profile>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=5">
+<meta name=referrer content="no-referrer">
+<title>
+Pagina di prova | Org notes
+</title>
+<link rel=icon type=image/svg+xml href=https://tizero.github.io/org-notes/favicon.svg>
+<link rel=icon type=image/png href=https://tizero.github.io/org-notes/favicon.png>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css integrity=sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js integrity=sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1},{left:'\\(',right:'\\)',display:!1},{left:'\\[',right:'\\]',display:!0}],macros:{"\\RR":"\\mathbb{R}"},throwOnError:!1})})</script>
+<link rel=stylesheet href=https://tizero.github.io/org-notes/css/style.css>
+<link rel=stylesheet href=https://tizero.github.io/org-notes/css/github_chroma.css type=text/css>
+</head>
+<body lang=it>
+<div style=float:right>
+[
+<a href=https://tizero.github.io/org-notes/categories/>categories</a>
+| <a href=https://tizero.github.io/org-notes/tags/>tags</a>
+]
+</div>
+<div style=clear:both></div>
+<div class=masthead-title><a href=https://tizero.github.io/org-notes/>Org notes</a></div>
+<div class=masthead-body>
+<hr>
+</div>
+<div class=post>
+<h1 class=post-title>Pagina di prova
+</h1>
+<p>
+<span style=font-variant:small-caps>tags</span>:
+<a href=https://tizero.github.io/org-notes/tags/test>test</a>
+<a href=https://tizero.github.io/org-notes/tags/katex>katex</a>
+<a href=https://tizero.github.io/org-notes/tags/inkscape>inkscape</a>
+<a href=https://tizero.github.io/org-notes/tags/code>code</a>
+</p>
+<p style=font-size:small>
+In modalità org l&rsquo;introduzione al post è inserita all&rsquo;interno del blocco <code>description</code> ed esportata nel front matter del file markdown processato da Hugo.
+</p>
+<hr>
+<div style=margin-top:40px>
+<h2 id=formule>Formule</h2>
+<p>In tutte le pagine <a href=https://katex.org>\(\KaTeX\)</a> si occupa del rendering delle formule matematiche, sia <em>inline</em> come ad esempio l&rsquo;identità di Eulero \(e^{i\pi} = -1\), sia a centro pagina come nella definizione della funzione zeta di Riemann</p>
+<p>\[\zeta(s) = \sum_{i = 1}^{\infty} \frac{1}{n^s}\]</p>
+<h2 id=immagini-svg>Immagini SVG</h2>
+<p>Quasi tutte le immagini sono create con <a href=https://inkscape.org/it/>Inkscape</a> e salvate nel formato svg nativo: per inserire le formule in \(\LaTeX\) c&rsquo;è l&rsquo;ottima estensione TexText.<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+<figure><img src=https://tizero.github.io/org-notes/images/gauss.svg>
+</figure>
+<p>Il preambolo a cui TexText fa riferimento è semplicemente</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-tex data-lang=tex><span class=k>\documentclass</span><span class=na>[12pt]</span><span class=nb>{</span>article<span class=nb>}</span>
+<span class=k>\usepackage</span><span class=nb>{</span>amsmath,amsthm,amssymb,amsfonts<span class=nb>}</span>
+<span class=k>\usepackage</span><span class=nb>{</span>color<span class=nb>}</span>
+</code></pre></div><p>L&rsquo;opzione della classe <code>article</code> emula i 16 pixel del testo nella pagina. Inoltre in TexText è impostato un fattore di scala di <code>1.21em</code>, per cui l&rsquo;effetto dovrebbe essere quello di avere formule della stessa dimensione in html che in svg.<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></p>
+<p>La prima è un&rsquo;immagine svg, mentre la seconda è generata con KaTeX.</p>
+<figure><img src=https://tizero.github.io/org-notes/images/zeta.svg>
+</figure>
+<p>\[\zeta(s) = \prod_p \frac{1}{1 - p^{-s}}\]</p>
+<h2 id=spell-checker>Spell checker</h2>
+<p>Doom Emacs non offre una configurazione dedicata per Ispell in modalità org. Almeno per saltare il controllo dei blocchi con formule si può usare il codice seguente nella propria configurazione:</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>add-hook</span> <span class=ss>&#39;org-mode-hook</span>
+          <span class=p>(</span><span class=nb>lambda</span> <span class=p>()</span>
+            <span class=p>(</span><span class=nf>make-local-variable</span> <span class=ss>&#39;ispell-skip-region-alist</span><span class=p>)</span>
+            <span class=p>(</span><span class=nv>add-to-list</span> <span class=ss>&#39;ispell-skip-region-alist</span> <span class=o>&#39;</span><span class=p>(</span><span class=s>&#34;\\[&#34;</span> <span class=o>.</span> <span class=s>&#34;\\\\]&#34;</span><span class=p>))</span>
+            <span class=p>(</span><span class=nv>add-to-list</span> <span class=ss>&#39;ispell-skip-region-alist</span> <span class=o>&#39;</span><span class=p>(</span><span class=s>&#34;\\$&#34;</span> <span class=o>.</span> <span class=s>&#34;\\$&#34;</span><span class=p>))</span>
+            <span class=p>))</span>
+</code></pre></div><section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>Reperibile al link <a href=https://textext.github.io/textext/>https://textext.github.io/textext/</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:2 role=doc-endnote>
+<p>Il fattore di scala il default di KaTeX (<a href=https://katex.org/docs/font.html#font-size-and-lengths>docs</a>)&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+</div>
+<hr>
+<p style=font-size:small>
+Built with <a href=https://github.com/kaushalmodi/ox-hugo><b>ox-hugo</b></a> for Emacs/Org-mode.
+Last commit <a href=https://github.com/tiZero/org-notes/commit/dd0462b01c7886afec31f75d959becaa4cf79fb7>
+[dd0462b]</a> on <b>20-02-2022</b>.
+</p>
+</body>
+</html>
