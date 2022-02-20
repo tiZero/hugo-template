@@ -33,14 +33,14 @@
     {{ end }}
 
     {{ with .Description }}
-        <p style="font-size: 0.8em;">
+        <p style="font-size: small;">
             {{ . | markdownify }}
         </p>
     {{ end }}
     <hr />
 
     {{ partial "header_image.html" . }}
-    <div style="margin: 40px auto;">
+    <div style="margin-top: 40px;">
         {{ .Content }}
     </div>
 

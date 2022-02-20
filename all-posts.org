@@ -2,21 +2,50 @@
 #+options: author:nil
 #+startup: logdone
 
-* DONE Pagina di prova :prova:matematica:
-CLOSED: [2022-02-19 sab 15:28]
+* DONE Pagina di prova :test:katex:inkscape:code:
+CLOSED: [2022-02-20 dom 20:37]
 :PROPERTIES:
-:EXPORT_FILE_NAME: my-first-post
+:EXPORT_FILE_NAME: pagina-di-prova
 :END:
 #+begin_description
-Descrizione del post: è inserita tramite il blocco ~description~ nel file org. Può essere utilizzata come introduzione o sottotitolo.
+In modalità org l'introduzione al post è inserita all'interno del blocco =description= ed esportata nel front matter del file markdown processato da Hugo.
 #+end_description
-Questo è il corpo della pagina. È possibile inserire della matematica /inline/ direttamente utilizzando la sintassi $\LaTeX$ nel file org. Matematica *inline* $x^2 + 1 = 0$.
+** Formule
+In tutte le pagine [[https://katex.org][$\KaTeX$]] si occupa del rendering delle formule matematiche, sia /inline/ come ad esempio l'identità di Eulero $e^{i\pi} = -1$, sia a centro pagina come nella definizione della funzione zeta di Riemann
 
-** Seconda sezione
-Matematica a centro della pagina \[\zeta(s) = \sum_{n = 1}^{+\infty}\frac{1}{n^s}\] E qualche immagine di prova utilizzando le impostazioni di default
+\[\zeta(s) = \sum_{i = 1}^{\infty} \frac{1}{n^s}\]
 
-[[/images/2c-u2-triangoli1.svg]]
+** Immagini SVG
+Quasi tutte le immagini sono create con [[https://inkscape.org/it/][Inkscape]] e salvate nel formato svg nativo: per inserire le formule in $\LaTeX$ c'è l'ottima estensione TexText.[fn:1]
+
+[[/images/gauss.svg]]
+
+Il preambolo a cui TexText fa riferimento è semplicemente
+#+begin_src tex
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage{color}
+#+end_src
+L'opzione della classe =article= emula i 16 pixel del testo nella pagina. Inoltre in TexText è impostato un fattore di scala di =1.21em=, per cui l'effetto dovrebbe essere quello di avere formule della stessa dimensione in html che in svg.[fn:2]
+
+La prima è un'immagine svg, mentre la seconda è generata con KaTeX.
+
+[[/images/zeta.svg]]
+
+\[\zeta(s) = \prod_p \frac{1}{1 - p^{-s}}\]
+** Spell checker
+Doom Emacs non offre una configurazione dedicata per Ispell in modalità org. Almeno per saltare il controllo dei blocchi con formule si può usare il codice seguente nella propria configurazione:
+#+begin_src elisp
+(add-hook 'org-mode-hook
+          (lambda ()
+            (make-local-variable 'ispell-skip-region-alist)
+            (add-to-list 'ispell-skip-region-alist '("\\[" . "\\\\]"))
+            (add-to-list 'ispell-skip-region-alist '("\\$" . "\\$"))
+            ))
+#+end_src
 * Footnotes
+[fn:1] Reperibile al link [[https://textext.github.io/textext/]]
+[fn:2] Il fattore di scala il default di KaTeX ([[https://katex.org/docs/font.html#font-size-and-lengths][docs]])
 * COMMENT Local Variables :ARCHIVE:
 # Local Variables:
 # eval: (org-hugo-auto-export-mode)

@@ -14,11 +14,4 @@
         {{ partial "summary_minus_toc.html" . }}
     </div>
 
-    <!-- https://gohugo.io/content/summaries/ -->
-    <!-- Show the 'Read more' link only if the 'more' comment is used, or if the 'description' is set. -->
-    {{ if .Truncated }}
-        <div class="readmore">
-            <a href='{{ .Permalink }}'>Read more<span class="screen-readers-only" > about {{ .Title }}</span></a>
-        </div>
-    {{ end }}
 </article>
