@@ -35,10 +35,6 @@
             {{- . | safeHTML -}}
         {{ end }}
 
-        <!-- Opengraph and Twitter -->
-        {{ partial "opengraph.html" . }}
-        {{ partial "twitter_cards.html" . }}
-
         <!-- KaTeX -->
         {{ partial "katex.html" }}
 
@@ -86,12 +82,12 @@
 
         <hr>
         <p style="font-size: small;">
-            Built with <a href="https://github.com/kaushalmodi/ox-hugo"><code>ox-hugo</code></a> for Emacs/Org-mode.
+            Built with <a href="https://github.com/kaushalmodi/ox-hugo"><b>ox-hugo</b></a> for Emacs/Org-mode.
             {{ with .GitInfo }} <!-- To enable this, put "enableGitInfo = true" in your site config.toml -->
                 {{ $git := . }}
                 {{ with site.Params.source }}
-                    This page was created/modified in commit <a href="{{ .url }}/commit/{{- $git.Hash -}}">
-                    <code>{{- $git.AbbreviatedHash -}}</code></a> on <b>{{ dateFormat "02-01-2006" $git.AuthorDate }}</b>.
+                    Page last commit <a href="{{ .url }}/commit/{{- $git.Hash -}}">
+                    [{{- $git.AbbreviatedHash -}}]</a> on <b>{{ dateFormat "02-01-2006" $git.AuthorDate }}</b>.
                 {{ end }}
             {{ end }}
         </p>
