@@ -86,8 +86,8 @@
             {{ with .GitInfo }} <!-- To enable this, put "enableGitInfo = true" in your site config.toml -->
                 {{ $git := . }}
                 {{ with site.Params.source }}
-                    This page last updated <a href="{{ .url }}/commit/{{- $git.Hash -}}">
-                    [{{- $git.AbbreviatedHash -}}]</a> on <b>{{ dateFormat "02-01-2006" $git.AuthorDate }}</b>.
+                    Page created/modified in commit <a href="{{ .url }}/commit/{{- $git.Hash -}}">
+                    {{- $git.AbbreviatedHash -}}</a> on <b>{{ dateFormat "02-01-2006" $git.AuthorDate }}</b>.
                 {{ end }}
             {{ end }}
         </p>

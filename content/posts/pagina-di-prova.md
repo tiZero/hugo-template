@@ -50,4 +50,4 @@ Doom Emacs non offre una configurazione dedicata per Ispell in modalità org. Al
 ```
 
 [^fn:1]: Reperibile al link <https://textext.github.io/textext/>
-[^fn:2]: Il fattore di scala il default di KaTeX ([docs](https://katex.org/docs/font.html#font-size-and-lengths))
+[^fn:2]: Il fattore di scala `1.21em` è il default di KaTeX ([docs](https://katex.org/docs/font.html#font-size-and-lengths))
