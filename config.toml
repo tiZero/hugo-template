@@ -19,6 +19,7 @@ pygmentsUseClasses = true
 
   [Params.source]
     url = "https://github.com/tiZero/org-notes"
+    md_dir = "content"
 
 [markup.goldmark.rederer]
   unsafe = true

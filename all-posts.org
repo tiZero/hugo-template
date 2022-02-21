@@ -45,7 +45,7 @@ Doom Emacs non offre una configurazione dedicata per Ispell in modalità org. Al
 #+end_src
 * Footnotes
 [fn:1] Reperibile al link [[https://textext.github.io/textext/]]
-[fn:2] Il fattore di scala il default di KaTeX ([[https://katex.org/docs/font.html#font-size-and-lengths][docs]])
+[fn:2] Il fattore di scala =1.21em= è il default di KaTeX ([[https://katex.org/docs/font.html#font-size-and-lengths][docs]])
 * COMMENT Local Variables :ARCHIVE:
 # Local Variables:
 # eval: (org-hugo-auto-export-mode)

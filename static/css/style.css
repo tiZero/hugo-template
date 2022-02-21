@@ -4,7 +4,6 @@ body {
   margin: 40px auto;
   max-width: 650px;
   line-height: 1.6;
-  font-size: 16px;
   color: #444;
   padding: 0 10px;
   text-size-adjust: 100%;
@@ -74,6 +73,7 @@ ul.task-list {
 .org-target::after {
   content: "◎ ";
 }
+.footnotes { font-size: small; }
 .footnotes p {
   margin: 5px auto;
 }
