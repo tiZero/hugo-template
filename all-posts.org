@@ -35,11 +35,11 @@ La prima è un'immagine svg, mentre la seconda è generata con KaTeX.
 \[\zeta(s) = \prod_p \frac{1}{1 - p^{-s}}\]
 ** Spell checker
 Doom Emacs non offre una configurazione dedicata per Ispell in modalità org. Almeno per saltare il controllo dei blocchi con formule si può usare il codice seguente nella propria configurazione:
-#+begin_src elisp
+#+begin_src elisp -n
 (add-hook 'org-mode-hook
           (lambda ()
             (make-local-variable 'ispell-skip-region-alist)
-            (add-to-list 'ispell-skip-region-alist '("\\[" . "\\\\]"))
+            (add-to-list 'ispell-skip-region-alist '("\\\\\\[" . "\\\\]"))
             (add-to-list 'ispell-skip-region-alist '("\\$" . "\\$"))
             ))
 #+end_src

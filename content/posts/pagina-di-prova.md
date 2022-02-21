@@ -40,11 +40,11 @@ La prima è un'immagine svg, mentre la seconda è generata con KaTeX.
 
 Doom Emacs non offre una configurazione dedicata per Ispell in modalità org. Almeno per saltare il controllo dei blocchi con formule si può usare il codice seguente nella propria configurazione:
 
-```elisp
+```elisp { linenos=table, linenostart=1 }
 (add-hook 'org-mode-hook
           (lambda ()
             (make-local-variable 'ispell-skip-region-alist)
-            (add-to-list 'ispell-skip-region-alist '("\\[" . "\\\\]"))
+            (add-to-list 'ispell-skip-region-alist '("\\\\\\[" . "\\\\]"))
             (add-to-list 'ispell-skip-region-alist '("\\$" . "\\$"))
             ))
 ```
