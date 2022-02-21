@@ -57,12 +57,18 @@ dd {
 ul.task-list {
   list-style-type: none;
 }
-/* tags after sub-headings in posts */
+/* tags after sub-headings in posts
 .tag span {
   background: lightgrey;
   font-size: small;
   padding: 0.1rem 0.2rem;
   margin: 0.2rem;
+}
+*/
+.tag, code span {
+  background-color: #f2efe4;
+  border-radius: 0.3em;
+  padding: 0.2em 0.3em;
 }
 /* org radio target destinations */
 .org-radio,
@@ -73,7 +79,16 @@ ul.task-list {
 .org-target::after {
   content: "◎ ";
 }
-.footnotes { font-size: small; }
+.footnotes {
+  font-size: small;
+}
 .footnotes p {
   margin: 5px auto;
+}
+.highlight {
+  background-color: #f2efe4;
+  border-radius: 0.3em;
+  padding: 8px;
+  overflow: auto;
+  border: 1px solid #d4cbb6;
 }

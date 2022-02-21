@@ -33,10 +33,10 @@ Pagina di prova | Org notes
 </h1>
 <p>
 <span style=font-variant:small-caps>tags</span>:
-<a href=https://tizero.github.io/org-notes/tags/test>test</a>
-<a href=https://tizero.github.io/org-notes/tags/katex>katex</a>
-<a href=https://tizero.github.io/org-notes/tags/inkscape>inkscape</a>
-<a href=https://tizero.github.io/org-notes/tags/code>code</a>
+<a class=tag style=font-size:small href=https://tizero.github.io/org-notes/tags/test>test</a>
+<a class=tag style=font-size:small href=https://tizero.github.io/org-notes/tags/katex>katex</a>
+<a class=tag style=font-size:small href=https://tizero.github.io/org-notes/tags/inkscape>inkscape</a>
+<a class=tag style=font-size:small href=https://tizero.github.io/org-notes/tags/code>code</a>
 </p>
 <p style=font-size:small>
 In modalità org l&rsquo;introduzione al post è inserita all&rsquo;interno del blocco <code>description</code> ed esportata nel front matter del file markdown processato da Hugo.
@@ -61,13 +61,25 @@ In modalità org l&rsquo;introduzione al post è inserita all&rsquo;interno del 
 <p>\[\zeta(s) = \prod_p \frac{1}{1 - p^{-s}}\]</p>
 <h2 id=spell-checker>Spell checker</h2>
 <p>Doom Emacs non offre una configurazione dedicata per Ispell in modalità org. Almeno per saltare il controllo dei blocchi con formule si può usare il codice seguente nella propria configurazione:</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>add-hook</span> <span class=ss>&#39;org-mode-hook</span>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>add-hook</span> <span class=ss>&#39;org-mode-hook</span>
           <span class=p>(</span><span class=nb>lambda</span> <span class=p>()</span>
             <span class=p>(</span><span class=nf>make-local-variable</span> <span class=ss>&#39;ispell-skip-region-alist</span><span class=p>)</span>
-            <span class=p>(</span><span class=nv>add-to-list</span> <span class=ss>&#39;ispell-skip-region-alist</span> <span class=o>&#39;</span><span class=p>(</span><span class=s>&#34;\\[&#34;</span> <span class=o>.</span> <span class=s>&#34;\\\\]&#34;</span><span class=p>))</span>
+            <span class=p>(</span><span class=nv>add-to-list</span> <span class=ss>&#39;ispell-skip-region-alist</span> <span class=o>&#39;</span><span class=p>(</span><span class=s>&#34;\\\\\\[&#34;</span> <span class=o>.</span> <span class=s>&#34;\\\\]&#34;</span><span class=p>))</span>
             <span class=p>(</span><span class=nv>add-to-list</span> <span class=ss>&#39;ispell-skip-region-alist</span> <span class=o>&#39;</span><span class=p>(</span><span class=s>&#34;\\$&#34;</span> <span class=o>.</span> <span class=s>&#34;\\$&#34;</span><span class=p>))</span>
             <span class=p>))</span>
-</code></pre></div><section class=footnotes role=doc-endnotes>
+</code></pre></td></tr></table>
+</div>
+</div><section class=footnotes role=doc-endnotes>
 <hr>
 <ol>
 <li id=fn:1 role=doc-endnote>
@@ -83,7 +95,8 @@ In modalità org l&rsquo;introduzione al post è inserita all&rsquo;interno del 
 <hr>
 <p style=font-size:small>
 Built with <a href=https://github.com/kaushalmodi/ox-hugo><b>ox-hugo</b></a> for Emacs/Org-mode.
-Page created/modified in commit <a href=https://github.com/tiZero/org-notes/commit/7b4ead0b3feb0bb613aa25b7938d82ad00ab2e27>7b4ead0</a> on <b>21-02-2022</b>.
+Page created/modified in commit <a href=https://github.com/tiZero/org-notes/commit/2f7f6967f5eb31b43859a71605c676ee04cd8a2a>
+<code>2f7f696</code></a> on <b>21/02/2022</b>.
 </p>
 </body>
 </html>
