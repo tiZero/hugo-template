@@ -94,3 +94,17 @@ ul.task-list {
   padding: 0 8px;
   overflow: auto;
 }
+/* Tables */
+table {
+  margin: 25px auto;
+  border-collapse: collapse;
+  border-bottom: 1px solid black;
+}
+table thead > tr > th {
+  border-bottom: 1px solid black;
+  padding: 0 10px;
+}
+table td {
+  text-align: center;
+  padding-top: 5px;
+}

@@ -49,5 +49,22 @@ Doom Emacs non offre una configurazione dedicata per Ispell in modalità org. Al
             ))
 ```
 
+
+## Tabelle {#tabelle}
+
+Org permette molto agevolmente di costruire tabelle in testo semplice: lo stile delle tabella seguente è adattato dal [blog di Gregory Gundersen](https://github.com/gwgundersen/blog-theme/blob/master/css/blog.css). Il numero di soluzioni reali dell'equazione \\(ax^2 + bx + c = 0\\) dipende dal segno del **discriminante** \\[\Delta = b^2 - 4ac\\] definito a partire dai coefficienti \\(a\\), \\(b\\) e \\(c\\):
+
+| Segno di \\(\Delta\\) | Numero di soluzioni    |
+|-----------------------|------------------------|
+| \\(\Delta > 0\\)      | Due soluzioni distinte |
+| \\(\Delta = 0\\)      | Unica soluzione        |
+| \\(\Delta < 0\\)      | Nessuna soluzione      |
+
+Nel caso in cui \\(\Delta \geq 0\\) vale la formula risolutiva per le equazioni di secondo grado
+
+\\[x = \frac{-b \pm \sqrt{\Delta}}{2a}\\]
+
+Come per le figure, è possibile aggiungere una didascalia alle tabelle utilizzando il tag `#+caption` in org-mode.
+
 [^fn:1]: Reperibile al link <https://textext.github.io/textext/>
 [^fn:2]: Il fattore di scala `1.21em` è il default di KaTeX ([docs](https://katex.org/docs/font.html#font-size-and-lengths))
