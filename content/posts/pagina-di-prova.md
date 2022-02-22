@@ -1,7 +1,7 @@
 +++
 title = "Pagina di prova"
 description = "In modalità org l'introduzione al post è inserita all'interno del blocco `description` ed esportata nel front matter del file markdown processato da Hugo."
-date = 2022-02-20T20:37:00+01:00
+date = 2022-02-20T20:38:00+01:00
 tags = ["test", "katex", "inkscape", "code"]
 draft = false
 +++
@@ -40,7 +40,7 @@ La prima è un'immagine svg, mentre la seconda è generata con KaTeX.
 
 Doom Emacs non offre una configurazione dedicata per Ispell in modalità org. Almeno per saltare il controllo dei blocchi con formule si può usare il codice seguente nella propria configurazione:
 
-```elisp { linenos=table, linenostart=1 }
+```elisp
 (add-hook 'org-mode-hook
           (lambda ()
             (make-local-variable 'ispell-skip-region-alist)

@@ -3,7 +3,7 @@
 #+startup: logdone
 
 * DONE Pagina di prova :test:katex:inkscape:code:
-CLOSED: [2022-02-20 dom 20:37]
+CLOSED: [2022-02-20 dom 20:38]
 :PROPERTIES:
 :EXPORT_FILE_NAME: pagina-di-prova
 :END:
@@ -35,7 +35,7 @@ La prima è un'immagine svg, mentre la seconda è generata con KaTeX.
 \[\zeta(s) = \prod_p \frac{1}{1 - p^{-s}}\]
 ** Spell checker
 Doom Emacs non offre una configurazione dedicata per Ispell in modalità org. Almeno per saltare il controllo dei blocchi con formule si può usare il codice seguente nella propria configurazione:
-#+begin_src elisp -n
+#+begin_src elisp
 (add-hook 'org-mode-hook
           (lambda ()
             (make-local-variable 'ispell-skip-region-alist)
