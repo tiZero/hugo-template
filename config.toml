@@ -21,5 +21,5 @@ pygmentsUseClasses = true
     url = "https://github.com/tiZero/org-notes"
     md_dir = "content"
 
-[markup.goldmark.rederer]
+[markup.goldmark.renderer]
   unsafe = true

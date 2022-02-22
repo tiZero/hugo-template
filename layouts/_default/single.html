@@ -19,12 +19,12 @@
         {{ range $key,$_ := . }}
             {{ with $page.Param $key }}
                 {{ $val := . }}
-                <p>
+                <p class="post-tag">
                     {{ printf `<span style="font-variant: small-caps;">%s</span>:` $key | safeHTML }}
                     {{ with site.GetPage "taxonomy" $key }}
                         {{ $taxonomy_page := . }}
                         {{ range $val }}
-                            <a class="tag" style="font-size: small;" href="{{ printf "%s%s" $taxonomy_page.Permalink (. | urlize) }}">{{ . }}</a>
+                            <a style="font-size: smaller;" href="{{ printf "%s%s" $taxonomy_page.Permalink (. | urlize) }}">{{ . }}</a>
                         {{ end }}
                     {{ end }}
                 </p>
@@ -33,7 +33,7 @@
     {{ end }}
 
     {{ with .Description }}
-        <p style="font-size: small;">
+        <p style="font-size: smaller;">
             {{ . | markdownify }}
         </p>
     {{ end }}

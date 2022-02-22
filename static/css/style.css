@@ -22,8 +22,12 @@ h3 {
 .masthead-title a {
   text-decoration: none;
 }
+.footnotes,
 .masthead-body {
-  font-size: 0.8em;
+  font-size: smaller;
+}
+.footnotes p {
+  margin: 5px auto;
 }
 a {
   color: #444;
@@ -33,10 +37,11 @@ a:hover {
   text-decoration: none;
 }
 .post-date {
-  font-size: small;
-  color: rgba(0, 0, 0, 0.5);
+  font-size: smaller;
+  color: #7f7f7f;
 }
-img {
+/* Centered images */
+figure > img {
   display: block;
   margin: 0 auto;
 }
@@ -57,18 +62,20 @@ dd {
 ul.task-list {
   list-style-type: none;
 }
-/* tags after sub-headings in posts
+/* tags after sub-headings in posts */
 .tag span {
-  background: lightgrey;
+  background: #e3e6e8;
+  border-radius: 0.3em;
   font-size: small;
-  padding: 0.1rem 0.2rem;
+  padding: 0.2rem 0.4rem;
   margin: 0.2rem;
 }
-*/
-.tag, p code {
-  background-color: #f2efe4;
+/* Post tags and inline code */
+.post-tag a,
+:not(.chroma) > code {
+  background-color: #e3e6e8;
   border-radius: 0.3em;
-  padding: 0.2em 0.3em;
+  padding: 0.2em 0.4em;
   text-decoration: none;
 }
 /* org radio target destinations */
@@ -80,16 +87,10 @@ ul.task-list {
 .org-target::after {
   content: "◎ ";
 }
-.footnotes {
-  font-size: small;
-}
-.footnotes p {
-  margin: 5px auto;
-}
+/* Code blocks */
 .highlight {
-  background-color: #f2efe4;
+  background-color: #f6f6f6;
   border-radius: 0.3em;
   padding: 0 8px;
   overflow: auto;
-  border: 1px solid #d4cbb6;
 }

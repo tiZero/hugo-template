@@ -81,13 +81,13 @@
         {{ block "main" . }}{{ end }}
 
         <hr>
-        <p style="font-size: small;">
+        <p style="font-size: smaller;">
             Built with <a href="https://github.com/kaushalmodi/ox-hugo"><b>ox-hugo</b></a> for Emacs/Org-mode.
             {{ with .GitInfo }} <!-- To enable this, put "enableGitInfo = true" in your site config.toml -->
                 {{ $git := . }}
                 {{ with site.Params.source }}
-                    Page created/modified in commit <a href="{{ .url }}/commit/{{- $git.Hash -}}">
-                    <code>{{- $git.AbbreviatedHash -}}</code></a> on <b>{{ dateFormat "02/01/2006" $git.AuthorDate }}</b>.
+                    Page created/modified in commit <code><a href="{{ .url }}/commit/{{- $git.Hash -}}">
+                    {{- $git.AbbreviatedHash -}}</a></code> on <b>{{ dateFormat "02/01/2006" $git.AuthorDate }}</b>.
                 {{ end }}
             {{ end }}
         </p>

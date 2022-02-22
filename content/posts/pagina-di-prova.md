@@ -2,7 +2,7 @@
 title = "Pagina di prova"
 description = "In modalità org l'introduzione al post è inserita all'interno del blocco `description` ed esportata nel front matter del file markdown processato da Hugo."
 date = 2022-02-20T20:38:00+01:00
-tags = ["test", "katex", "inkscape", "code"]
+tags = ["test", "katex", "inkscape"]
 draft = false
 +++
 

@@ -2,7 +2,7 @@
 #+options: author:nil
 #+startup: logdone
 
-* DONE Pagina di prova :test:katex:inkscape:code:
+* DONE Pagina di prova :test:katex:inkscape:
 CLOSED: [2022-02-20 dom 20:38]
 :PROPERTIES:
 :EXPORT_FILE_NAME: pagina-di-prova
