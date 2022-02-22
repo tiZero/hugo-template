@@ -65,10 +65,11 @@ ul.task-list {
   margin: 0.2rem;
 }
 */
-.tag, code span {
+.tag, p code {
   background-color: #f2efe4;
   border-radius: 0.3em;
   padding: 0.2em 0.3em;
+  text-decoration: none;
 }
 /* org radio target destinations */
 .org-radio,
@@ -88,7 +89,7 @@ ul.task-list {
 .highlight {
   background-color: #f2efe4;
   border-radius: 0.3em;
-  padding: 8px;
+  padding: 0 8px;
   overflow: auto;
   border: 1px solid #d4cbb6;
 }
