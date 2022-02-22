@@ -31,14 +31,13 @@ Pagina di prova | Org notes
 <div class=post>
 <h1 class=post-title>Pagina di prova
 </h1>
-<p>
+<p class=post-tag>
 <span style=font-variant:small-caps>tags</span>:
-<a class=tag style=font-size:small href=https://tizero.github.io/org-notes/tags/test>test</a>
-<a class=tag style=font-size:small href=https://tizero.github.io/org-notes/tags/katex>katex</a>
-<a class=tag style=font-size:small href=https://tizero.github.io/org-notes/tags/inkscape>inkscape</a>
-<a class=tag style=font-size:small href=https://tizero.github.io/org-notes/tags/code>code</a>
+<a style=font-size:smaller href=https://tizero.github.io/org-notes/tags/test>test</a>
+<a style=font-size:smaller href=https://tizero.github.io/org-notes/tags/katex>katex</a>
+<a style=font-size:smaller href=https://tizero.github.io/org-notes/tags/inkscape>inkscape</a>
 </p>
-<p style=font-size:small>
+<p style=font-size:smaller>
 In modalità org l&rsquo;introduzione al post è inserita all&rsquo;interno del blocco <code>description</code> ed esportata nel front matter del file markdown processato da Hugo.
 </p>
 <hr>
@@ -67,7 +66,34 @@ In modalità org l&rsquo;introduzione al post è inserita all&rsquo;interno del 
             <span class=p>(</span><span class=nv>add-to-list</span> <span class=ss>&#39;ispell-skip-region-alist</span> <span class=o>&#39;</span><span class=p>(</span><span class=s>&#34;\\\\\\[&#34;</span> <span class=o>.</span> <span class=s>&#34;\\\\]&#34;</span><span class=p>))</span>
             <span class=p>(</span><span class=nv>add-to-list</span> <span class=ss>&#39;ispell-skip-region-alist</span> <span class=o>&#39;</span><span class=p>(</span><span class=s>&#34;\\$&#34;</span> <span class=o>.</span> <span class=s>&#34;\\$&#34;</span><span class=p>))</span>
             <span class=p>))</span>
-</code></pre></div><section class=footnotes role=doc-endnotes>
+</code></pre></div><h2 id=tabelle>Tabelle</h2>
+<p>Org permette molto agevolmente di costruire tabelle in testo semplice: lo stile delle tabella seguente è adattato dal <a href=https://github.com/gwgundersen/blog-theme/blob/master/css/blog.css>blog di Gregory Gundersen</a>. Il numero di soluzioni reali dell&rsquo;equazione \(ax^2 + bx + c = 0\) dipende dal segno del <strong>discriminante</strong> \[\Delta = b^2 - 4ac\] definito a partire dai coefficienti \(a\), \(b\) e \(c\):</p>
+<table>
+<thead>
+<tr>
+<th>Segno di \(\Delta\)</th>
+<th>Numero di soluzioni</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\(\Delta > 0\)</td>
+<td>Due soluzioni distinte</td>
+</tr>
+<tr>
+<td>\(\Delta = 0\)</td>
+<td>Unica soluzione</td>
+</tr>
+<tr>
+<td>\(\Delta &lt; 0\)</td>
+<td>Nessuna soluzione</td>
+</tr>
+</tbody>
+</table>
+<p>Nel caso in cui \(\Delta \geq 0\) vale la formula risolutiva per le equazioni di secondo grado</p>
+<p>\[x = \frac{-b \pm \sqrt{\Delta}}{2a}\]</p>
+<p>Come per le figure, è possibile aggiungere una didascalia alle tabelle utilizzando il tag <code>#+caption</code> in org-mode.</p>
+<section class=footnotes role=doc-endnotes>
 <hr>
 <ol>
 <li id=fn:1 role=doc-endnote>
@@ -81,10 +107,9 @@ In modalità org l&rsquo;introduzione al post è inserita all&rsquo;interno del 
 </div>
 </div>
 <hr>
-<p style=font-size:small>
+<p style=font-size:smaller>
 Built with <a href=https://github.com/kaushalmodi/ox-hugo><b>ox-hugo</b></a> for Emacs/Org-mode.
-Page created/modified in commit <a href=https://github.com/tiZero/org-notes/commit/c66875a0cd5ee6610ee0ff4d7838e76c0c21ffd9>
-<code>c66875a</code></a> on <b>22/02/2022</b>.
+Page created/modified in commit <code><a href=https://github.com/tiZero/org-notes/commit/feefed6df8b9724e326f80f79366c7a6b5f0b0c6>feefed6</a></code> on <b>22/02/2022</b>.
 </p>
 </body>
 </html>
