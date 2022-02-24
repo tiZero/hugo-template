@@ -13,9 +13,9 @@ In modalità org l'introduzione al post è inserita all'interno del blocco =desc
 #+end_description
 ** Formule
 In tutte le pagine [[https://katex.org][$\KaTeX$]] si occupa del rendering delle formule matematiche, sia /inline/ come ad esempio l'identità di Eulero $e^{i\pi} = -1$, sia a centro pagina come nella definizione della funzione zeta di Riemann
-
-\[\zeta(s) = \sum_{i = 1}^{\infty} \frac{1}{n^s}\]
-
+\[
+\zeta(s) = \sum_{i = 1}^{\infty} \frac{1}{n^s}
+\]
 ** Immagini SVG
 Quasi tutte le immagini sono create con [[https://inkscape.org/it/][Inkscape]] e salvate nel formato svg nativo: per inserire le formule in $\LaTeX$ c'è l'ottima estensione TexText.[fn:1]
 
@@ -45,20 +45,40 @@ Doom Emacs non offre una configurazione dedicata per Ispell in modalità org. Al
             ))
 #+end_src
 ** Tabelle
-Org permette molto agevolmente di costruire tabelle in testo semplice: lo stile delle tabella seguente è adattato dal [[https://github.com/gwgundersen/blog-theme/blob/master/css/blog.css][blog di Gregory Gundersen]]. Il numero di soluzioni reali dell'equazione $ax^2 + bx + c = 0$ dipende dal segno del *discriminante* \[\Delta = b^2 - 4ac\] definito a partire dai coefficienti $a$, $b$ e $c$:
-| Segno di $\Delta$ | Numero di soluzioni    |
-|-------------------+------------------------|
-| $\Delta > 0$      | Due soluzioni distinte |
-| $\Delta = 0$      | Unica soluzione        |
-| $\Delta < 0$      | Nessuna soluzione      |
+Org permette molto agevolmente di costruire tabelle in testo semplice: lo stile delle tabella seguente è adattato dal [[https://github.com/gwgundersen/blog-theme/blob/master/css/blog.css][blog di Gregory Gundersen]]. Il numero di soluzioni reali dell'equazione $ax^2 + bx + c = 0$ dipende dal segno del *discriminante* \[\Delta = b^2 - 4ac\] definito a partire dai coefficienti $a$, $b$ e $c$ come riepilogato nella tabella seguente:
+
+| Segno di $\Delta$ | Soluzioni reali           | Soluzioni puramente immaginarie |
+|-------------------+---------------------------+---------------------------------|
+| $\Delta > 0$      | Due                       | Nessuna                         |
+| $\Delta = 0$      | Una soltanto              | Nessuna                         |
+| $\Delta < 0$      | Nessuna                   | Due (opposte)                   |
+
 Nel caso in cui $\Delta \geq 0$ vale la formula risolutiva per le equazioni di secondo grado
-
-\[x = \frac{-b \pm \sqrt{\Delta}}{2a}\]
-
+\[
+x = \frac{-b \pm \sqrt{\Delta}}{2a}
+\]
 Come per le figure, è possibile aggiungere una didascalia alle tabelle utilizzando il tag =#+caption= in org-mode.
+** Liste :list:
+In Org-mode è possibile attribuire un tag (o anche più di uno) a ciascuna sezione del post. Tuttavia, questi non sono cliccabili. Ad esempio, al titolo di questo paragrafo è stato aggiunto il tag =list=.
+
+I corpi considerati in fisica possono essere di diversa natura.
+- Corpi /puntiformi/: dotati di massa ma aventi volume zero (considerati cioè come un punto che non occupa una regione estesa di spazio)
+- Corpi /estesi/: aventi sia massa che volume positivi
+Finora abbiamo trattato
+#+attr_html: :class task-list
+- [X] Corpi puntiformi
+- [ ] Corpi estesi
+La sintassi di Org per creare le cosiddette /TODO list/ è la stessa di Markdown. Attenzione al fatto che la classe ~task-list~ non è automaticamente esportata[fn:3] in Black Friday, ed è pertanto necessario indicarla esplicitamente all'inizio della lista, ad esempio con
+#+begin_src org
+,#+ attr_html: :class task-list
+- [X] Corpi puntiformi
+- [ ] Corpi estesi
+#+end_src
+In questo modo è possibile ad esempio rimuovere i pallini prima di ciascun elemento impostando lo stile nel file css.
 * Footnotes
 [fn:1] Reperibile al link [[https://textext.github.io/textext/]]
 [fn:2] Il fattore di scala =1.21em= è il default di KaTeX ([[https://katex.org/docs/font.html#font-size-and-lengths][docs]])
+[fn:3] Vedi [[https://github.com/gohugoio/hugo/issues/6837][hugo issue 6837]]
 * COMMENT Local Variables :ARCHIVE:
 # Local Variables:
 # eval: (org-hugo-auto-export-mode)
