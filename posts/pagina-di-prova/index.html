@@ -43,8 +43,10 @@ In modalità org l&rsquo;introduzione al post è inserita all&rsquo;interno del 
 <hr>
 <div style=margin-top:40px>
 <h2 id=formule>Formule</h2>
-<p>In tutte le pagine <a href=https://katex.org>\(\KaTeX\)</a> si occupa del rendering delle formule matematiche, sia <em>inline</em> come ad esempio l&rsquo;identità di Eulero \(e^{i\pi} = -1\), sia a centro pagina come nella definizione della funzione zeta di Riemann</p>
-<p>\[\zeta(s) = \sum_{i = 1}^{\infty} \frac{1}{n^s}\]</p>
+<p>In tutte le pagine <a href=https://katex.org>\(\KaTeX\)</a> si occupa del rendering delle formule matematiche, sia <em>inline</em> come ad esempio l&rsquo;identità di Eulero \(e^{i\pi} = -1\), sia a centro pagina come nella definizione della funzione zeta di Riemann
+\[
+\zeta(s) = \sum_{i = 1}^{\infty} \frac{1}{n^s}
+\]</p>
 <h2 id=immagini-svg>Immagini SVG</h2>
 <p>Quasi tutte le immagini sono create con <a href=https://inkscape.org/it/>Inkscape</a> e salvate nel formato svg nativo: per inserire le formule in \(\LaTeX\) c&rsquo;è l&rsquo;ottima estensione TexText.<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
 <figure><img src=https://tizero.github.io/org-notes/images/gauss.svg>
@@ -67,32 +69,57 @@ In modalità org l&rsquo;introduzione al post è inserita all&rsquo;interno del 
             <span class=p>(</span><span class=nv>add-to-list</span> <span class=ss>&#39;ispell-skip-region-alist</span> <span class=o>&#39;</span><span class=p>(</span><span class=s>&#34;\\$&#34;</span> <span class=o>.</span> <span class=s>&#34;\\$&#34;</span><span class=p>))</span>
             <span class=p>))</span>
 </code></pre></div><h2 id=tabelle>Tabelle</h2>
-<p>Org permette molto agevolmente di costruire tabelle in testo semplice: lo stile delle tabella seguente è adattato dal <a href=https://github.com/gwgundersen/blog-theme/blob/master/css/blog.css>blog di Gregory Gundersen</a>. Il numero di soluzioni reali dell&rsquo;equazione \(ax^2 + bx + c = 0\) dipende dal segno del <strong>discriminante</strong> \[\Delta = b^2 - 4ac\] definito a partire dai coefficienti \(a\), \(b\) e \(c\):</p>
+<p>Org permette molto agevolmente di costruire tabelle in testo semplice: lo stile delle tabella seguente è adattato dal <a href=https://github.com/gwgundersen/blog-theme/blob/master/css/blog.css>blog di Gregory Gundersen</a>. Il numero di soluzioni reali dell&rsquo;equazione \(ax^2 + bx + c = 0\) dipende dal segno del <strong>discriminante</strong> \[\Delta = b^2 - 4ac\] definito a partire dai coefficienti \(a\), \(b\) e \(c\) come riepilogato nella tabella seguente:</p>
 <table>
 <thead>
 <tr>
 <th>Segno di \(\Delta\)</th>
-<th>Numero di soluzioni</th>
+<th>Soluzioni reali</th>
+<th>Soluzioni puramente immaginarie</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>\(\Delta > 0\)</td>
-<td>Due soluzioni distinte</td>
+<td>Due</td>
+<td>Nessuna</td>
 </tr>
 <tr>
 <td>\(\Delta = 0\)</td>
-<td>Unica soluzione</td>
+<td>Una soltanto</td>
+<td>Nessuna</td>
 </tr>
 <tr>
 <td>\(\Delta &lt; 0\)</td>
-<td>Nessuna soluzione</td>
+<td>Nessuna</td>
+<td>Due (opposte)</td>
 </tr>
 </tbody>
 </table>
-<p>Nel caso in cui \(\Delta \geq 0\) vale la formula risolutiva per le equazioni di secondo grado</p>
-<p>\[x = \frac{-b \pm \sqrt{\Delta}}{2a}\]</p>
-<p>Come per le figure, è possibile aggiungere una didascalia alle tabelle utilizzando il tag <code>#+caption</code> in org-mode.</p>
+<p>Nel caso in cui \(\Delta \geq 0\) vale la formula risolutiva per le equazioni di secondo grado
+\[
+x = \frac{-b \pm \sqrt{\Delta}}{2a}
+\]
+Come per le figure, è possibile aggiungere una didascalia alle tabelle utilizzando il tag <code>#+caption</code> in org-mode.</p>
+<h2 id=liste>Liste <span class=tag><span class=list>list</span></span></h2>
+<p>In Org-mode è possibile attribuire un tag (o anche più di uno) a ciascuna sezione del post. Tuttavia, questi non sono cliccabili. Ad esempio, al titolo di questo paragrafo è stato aggiunto il tag <code>list</code>.</p>
+<p>I corpi considerati in fisica possono essere di diversa natura.</p>
+<ul>
+<li>Corpi <em>puntiformi</em>: dotati di massa ma aventi volume zero (considerati cioè come un punto che non occupa una regione estesa di spazio)</li>
+<li>Corpi <em>estesi</em>: aventi sia massa che volume positivi</li>
+</ul>
+<p>Finora abbiamo trattato</p>
+<div class=task-list>
+<ul>
+<li><input checked disabled type=checkbox> Corpi puntiformi</li>
+<li><input disabled type=checkbox> Corpi estesi</li>
+</ul>
+</div>
+<p>La sintassi di Org per creare le cosiddette <em>TODO list</em> è la stessa di Markdown. Attenzione al fatto che la classe <code>task-list</code> non è automaticamente esportata<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup> in Black Friday, ed è pertanto necessario indicarla esplicitamente all&rsquo;inizio della lista, ad esempio con</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-org data-lang=org>#+ attr_html: :class task-list
+<span class=k>- [X]</span> Corpi puntiformi
+<span class=k>- [ ]</span> Corpi estesi
+</code></pre></div><p>In questo modo è possibile ad esempio rimuovere i pallini prima di ciascun elemento impostando lo stile nel file css.</p>
 <section class=footnotes role=doc-endnotes>
 <hr>
 <ol>
@@ -102,6 +129,9 @@ In modalità org l&rsquo;introduzione al post è inserita all&rsquo;interno del 
 <li id=fn:2 role=doc-endnote>
 <p>Il fattore di scala <code>1.21em</code> è il default di KaTeX (<a href=https://katex.org/docs/font.html#font-size-and-lengths>docs</a>)&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
+<li id=fn:3 role=doc-endnote>
+<p>Vedi <a href=https://github.com/gohugoio/hugo/issues/6837>hugo issue 6837</a>&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
 </ol>
 </section>
 </div>
@@ -109,7 +139,7 @@ In modalità org l&rsquo;introduzione al post è inserita all&rsquo;interno del 
 <hr>
 <p style=font-size:smaller>
 Built with <a href=https://github.com/kaushalmodi/ox-hugo><b>ox-hugo</b></a> for Emacs/Org-mode.
-Page created/modified in commit <code><a href=https://github.com/tiZero/org-notes/commit/feefed6df8b9724e326f80f79366c7a6b5f0b0c6>feefed6</a></code> on <b>22/02/2022</b>.
+Page created/modified in commit <code><a href=https://github.com/tiZero/org-notes/commit/973ef0253dda6f43ea798b0f7920d29a88b0a9c3>973ef02</a></code> on <b>24/02/2022</b>.
 </p>
 </body>
 </html>
