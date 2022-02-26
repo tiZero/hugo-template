@@ -1,11 +1,12 @@
-#+title: Presentazione di prova
-#+author:
-#+language: it
-#+options: toc:nil num:nil reveal_slide_number:nil
+#+TITLE: Presentazione di prova
+#+AUTHOR:
+#+LANGUAGE: it
+#+OPTIONS: toc:nil num:nil reveal_slide_number:nil
 
-#+reveal_root: ../js/reveal.js
-#+reveal_theme: white
-#+reveal_trans: slide
+#+REVEAL_HEAD_PREAMBLE: <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+#+REVEAL_ROOT: ../js/reveal.js
+#+REVEAL_THEME: white
+#+REVEAL_TRANS: slide
 
 * Teorema 1
 Gli assi dei lati di un poligono inscritto in una circonferenza passano tutti per uno stesso punto.
