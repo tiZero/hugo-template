@@ -1,0 +1,27 @@
+#+title: Presentazione di prova
+#+author:
+#+language: it
+#+options: toc:nil num:nil reveal_slide_number:nil
+
+#+reveal_root: /js/reveal.js
+#+reveal_theme: white
+#+reveal_trans: slide
+
+* Teorema 1
+Gli assi dei lati di un poligono inscritto in una circonferenza passano tutti per uno stesso punto.
+** Dimostrazione 1/3
+Consideriamo due vertici $A$ e $B$ del poligono (anche non consecutivi).
+
+Vogliamo dimostrare che il centro $O$ della circonferenza circoscritta appartiene all'asse del segmento $AB$.
+** Dimostrazione 2/3
+Poiché il poligono è inscritto, i punti $A$ e $B$ si trovano entrambi sulla circonferenza di centro $O$.
+
+In particolare abbiamo che \[AO \cong OB\]
+** Dimostrazione 3/3
+Poiché l'asse del segmento $AB$ è il luogo dei punti equidistanti dagli estremi, il teorema è dimostrato.
+* GeoGebra (TH1)
+#+reveal_html: <iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/ye9gfsmp/width/800/height/450/border/ffffff/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="800px" height="450px" style="border:0px;" data-preload></iframe>
+* COMMENT Local Variables
+# Local Variables:
+# org-re-reveal-progress: nil
+# End:
