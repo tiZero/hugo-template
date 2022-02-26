@@ -3,7 +3,7 @@
 #+language: it
 #+options: toc:nil num:nil reveal_slide_number:nil
 
-#+reveal_root: /js/reveal.js
+#+reveal_root: ../js/reveal.js
 #+reveal_theme: white
 #+reveal_trans: slide
 
