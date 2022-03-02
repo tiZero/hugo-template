@@ -6,140 +6,72 @@
 <meta name=referrer content="no-referrer">
 <title>
 Pagina di prova | Org notes
-</title>
-<link rel=icon type=image/svg+xml href=https://tizero.github.io/org-notes/favicon.svg>
+</title><link rel=icon type=image/svg+xml href=https://tizero.github.io/org-notes/favicon.svg>
 <link rel=icon type=image/png href=https://tizero.github.io/org-notes/favicon.png>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css integrity=sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ crossorigin=anonymous>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js integrity=sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
-<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1},{left:'\\(',right:'\\)',display:!1},{left:'\\[',right:'\\]',display:!0}],macros:{"\\RR":"\\mathbb{R}"},throwOnError:!1})})</script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],macros:{"\\RR":"\\mathbb{R}"},throwOnError:!1})})</script>
 <link rel=stylesheet href=https://tizero.github.io/org-notes/css/style.css>
 <link rel=stylesheet href=https://tizero.github.io/org-notes/css/github_chroma.css type=text/css>
-</head>
-<body lang=it>
+</head><body lang=it>
 <div style=float:right>
 [
 <a href=https://tizero.github.io/org-notes/categories/>categories</a>
 | <a href=https://tizero.github.io/org-notes/tags/>tags</a>
 ]
-</div>
-<div style=clear:both></div>
-<div class=masthead-title><a href=https://tizero.github.io/org-notes/>Org notes</a></div>
-<div class=masthead-body>
+</div><div style=clear:both></div><div class=masthead-title><a href=https://tizero.github.io/org-notes/>Org notes</a></div><div class=masthead-body>
 <hr>
-</div>
-<div class=post>
+</div><div class=post>
 <h1 class=post-title>Pagina di prova
-</h1>
-<p class=post-tag>
+</h1><p class=post-tag>
 <span style=font-variant:small-caps>tags</span>:
 <a style=font-size:smaller href=https://tizero.github.io/org-notes/tags/test>test</a>
 <a style=font-size:smaller href=https://tizero.github.io/org-notes/tags/katex>katex</a>
 <a style=font-size:smaller href=https://tizero.github.io/org-notes/tags/inkscape>inkscape</a>
-</p>
-<p style=font-size:smaller>
+</p><p style=font-size:smaller>
 In modalità org l&rsquo;introduzione al post è inserita all&rsquo;interno del blocco <code>description</code> ed esportata nel front matter del file markdown processato da Hugo.
-</p>
-<hr>
+</p><hr>
 <div style=margin-top:40px>
-<h2 id=formule>Formule</h2>
-<p>In tutte le pagine <a href=https://katex.org>\(\KaTeX\)</a> si occupa del rendering delle formule matematiche, sia <em>inline</em> come ad esempio l&rsquo;identità di Eulero \(e^{i\pi} = -1\), sia a centro pagina come nella definizione della funzione zeta di Riemann
+<h2 id=formule>Formule</h2><p>In tutte le pagine <a href=https://katex.org>\(\KaTeX\)</a> si occupa del rendering delle formule matematiche, sia <em>inline</em> come ad esempio l&rsquo;identità di Eulero \(e^{i\pi} = -1\), sia a centro pagina come nella definizione della funzione zeta di Riemann
 \[
 \zeta(s) = \sum_{i = 1}^{\infty} \frac{1}{n^s}
-\]</p>
-<h2 id=immagini-svg>Immagini SVG</h2>
-<p>Quasi tutte le immagini sono create con <a href=https://inkscape.org/it/>Inkscape</a> e salvate nel formato svg nativo: per inserire le formule in \(\LaTeX\) c&rsquo;è l&rsquo;ottima estensione TexText.<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
-<figure><img src=https://tizero.github.io/org-notes/images/gauss.svg>
-</figure>
-<p>Il preambolo a cui TexText fa riferimento è semplicemente</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-tex data-lang=tex><span class=k>\documentclass</span><span class=na>[12pt]</span><span class=nb>{</span>article<span class=nb>}</span>
-<span class=k>\usepackage</span><span class=nb>{</span>amsmath,amsthm,amssymb,amsfonts<span class=nb>}</span>
-<span class=k>\usepackage</span><span class=nb>{</span>color<span class=nb>}</span>
-</code></pre></div><p>L&rsquo;opzione della classe <code>article</code> emula i 16 pixel del testo nella pagina. Inoltre in TexText è impostato un fattore di scala di <code>1.21em</code>, per cui l&rsquo;effetto dovrebbe essere quello di avere formule della stessa dimensione in html che in svg.<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></p>
-<p>La prima è un&rsquo;immagine svg, mentre la seconda è generata con KaTeX.</p>
-<figure><img src=https://tizero.github.io/org-notes/images/zeta.svg>
-</figure>
-<p>\[\zeta(s) = \prod_p \frac{1}{1 - p^{-s}}\]</p>
-<h2 id=spell-checker>Spell checker</h2>
-<p>Doom Emacs non offre una configurazione dedicata per Ispell in modalità org. Almeno per saltare il controllo dei blocchi con formule si può usare il codice seguente nella propria configurazione:</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>add-hook</span> <span class=ss>&#39;org-mode-hook</span>
-          <span class=p>(</span><span class=nb>lambda</span> <span class=p>()</span>
-            <span class=p>(</span><span class=nf>make-local-variable</span> <span class=ss>&#39;ispell-skip-region-alist</span><span class=p>)</span>
-            <span class=p>(</span><span class=nv>add-to-list</span> <span class=ss>&#39;ispell-skip-region-alist</span> <span class=o>&#39;</span><span class=p>(</span><span class=s>&#34;\\\\\\[&#34;</span> <span class=o>.</span> <span class=s>&#34;\\\\]&#34;</span><span class=p>))</span>
-            <span class=p>(</span><span class=nv>add-to-list</span> <span class=ss>&#39;ispell-skip-region-alist</span> <span class=o>&#39;</span><span class=p>(</span><span class=s>&#34;\\$&#34;</span> <span class=o>.</span> <span class=s>&#34;\\$&#34;</span><span class=p>))</span>
-            <span class=p>))</span>
-</code></pre></div><h2 id=tabelle>Tabelle</h2>
-<p>Org permette molto agevolmente di costruire tabelle in testo semplice: lo stile delle tabella seguente è adattato dal <a href=https://github.com/gwgundersen/blog-theme/blob/master/css/blog.css>blog di Gregory Gundersen</a>. Il numero di soluzioni reali dell&rsquo;equazione \(ax^2 + bx + c = 0\) dipende dal segno del <strong>discriminante</strong> \[\Delta = b^2 - 4ac\] definito a partire dai coefficienti \(a\), \(b\) e \(c\) come riepilogato nella tabella seguente:</p>
-<table>
+\]</p><h2 id=immagini-svg>Immagini SVG</h2><p>Quasi tutte le immagini sono create con <a href=https://inkscape.org/it/>Inkscape</a> e salvate nel formato svg nativo: per inserire le formule in \(\LaTeX\) c&rsquo;è l&rsquo;ottima estensione TexText.<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p><figure><img src=https://tizero.github.io/org-notes/images/gauss.svg>
+</figure><p>Il preambolo a cui TexText fa riferimento è semplicemente</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-tex data-lang=tex><span class=line><span class=cl><span class=k>\documentclass</span><span class=na>[12pt]</span><span class=nb>{</span>article<span class=nb>}</span>
+</span></span><span class=line><span class=cl><span class=k>\usepackage</span><span class=nb>{</span>amsmath,amsthm,amssymb,amsfonts<span class=nb>}</span>
+</span></span><span class=line><span class=cl><span class=k>\usepackage</span><span class=nb>{</span>color<span class=nb>}</span>
+</span></span></code></pre></div><p>L&rsquo;opzione della classe <code>article</code> emula i 16 pixel del testo nella pagina. Inoltre in TexText è impostato un fattore di scala di <code>1.21em</code>, per cui l&rsquo;effetto dovrebbe essere quello di avere formule della stessa dimensione in html che in svg.<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></p><p>La prima è un&rsquo;immagine svg, mentre la seconda è generata con KaTeX.</p><figure><img src=https://tizero.github.io/org-notes/images/zeta.svg>
+</figure><p>\[\zeta(s) = \prod_p \frac{1}{1 - p^{-s}}\]</p><h2 id=spell-checker>Spell checker</h2><p>Doom Emacs non offre una configurazione dedicata per Ispell in modalità org. Almeno per saltare il controllo dei blocchi con formule si può usare il codice seguente nella propria configurazione:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=line><span class=cl><span class=p>(</span><span class=nv>add-hook</span> <span class=ss>&#39;org-mode-hook</span>
+</span></span><span class=line><span class=cl>          <span class=p>(</span><span class=nb>lambda</span> <span class=p>()</span>
+</span></span><span class=line><span class=cl>            <span class=p>(</span><span class=nf>make-local-variable</span> <span class=ss>&#39;ispell-skip-region-alist</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=p>(</span><span class=nv>add-to-list</span> <span class=ss>&#39;ispell-skip-region-alist</span> <span class=o>&#39;</span><span class=p>(</span><span class=s>&#34;\\\\\\[&#34;</span> <span class=o>.</span> <span class=s>&#34;\\\\]&#34;</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>            <span class=p>(</span><span class=nv>add-to-list</span> <span class=ss>&#39;ispell-skip-region-alist</span> <span class=o>&#39;</span><span class=p>(</span><span class=s>&#34;\\$&#34;</span> <span class=o>.</span> <span class=s>&#34;\\$&#34;</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>            <span class=p>))</span>
+</span></span></code></pre></div><h2 id=tabelle>Tabelle</h2><p>Org permette molto agevolmente di costruire tabelle in testo semplice: lo stile delle tabella seguente è adattato dal <a href=https://github.com/gwgundersen/blog-theme/blob/master/css/blog.css>blog di Gregory Gundersen</a>. Il numero di soluzioni reali dell&rsquo;equazione \(ax^2 + bx + c = 0\) dipende dal segno del <strong>discriminante</strong> \[\Delta = b^2 - 4ac\] definito a partire dai coefficienti \(a\), \(b\) e \(c\) come riepilogato nella tabella seguente:</p><table>
 <thead>
 <tr>
-<th>Segno di \(\Delta\)</th>
-<th>Soluzioni reali</th>
-<th>Soluzioni puramente immaginarie</th>
-</tr>
-</thead>
-<tbody>
+<th>Segno di \(\Delta\)</th><th>Soluzioni reali</th><th>Soluzioni puramente immaginarie</th></tr></thead><tbody>
 <tr>
-<td>\(\Delta > 0\)</td>
-<td>Due</td>
-<td>Nessuna</td>
-</tr>
-<tr>
-<td>\(\Delta = 0\)</td>
-<td>Una soltanto</td>
-<td>Nessuna</td>
-</tr>
-<tr>
-<td>\(\Delta &lt; 0\)</td>
-<td>Nessuna</td>
-<td>Due (opposte)</td>
-</tr>
-</tbody>
-</table>
-<p>Nel caso in cui \(\Delta \geq 0\) vale la formula risolutiva per le equazioni di secondo grado
+<td>\(\Delta > 0\)</td><td>Due</td><td>Nessuna</td></tr><tr>
+<td>\(\Delta = 0\)</td><td>Una soltanto</td><td>Nessuna</td></tr><tr>
+<td>\(\Delta &lt; 0\)</td><td>Nessuna</td><td>Due (opposte)</td></tr></tbody></table><p>Nel caso in cui \(\Delta \geq 0\) vale la formula risolutiva per le equazioni di secondo grado
 \[
 x = \frac{-b \pm \sqrt{\Delta}}{2a}
 \]
-Come per le figure, è possibile aggiungere una didascalia alle tabelle utilizzando il tag <code>#+caption</code> in org-mode.</p>
-<h2 id=liste>Liste <span class=tag><span class=list>list</span></span></h2>
-<p>In Org-mode è possibile attribuire un tag (o anche più di uno) a ciascuna sezione del post. Tuttavia, questi non sono cliccabili. Ad esempio, al titolo di questo paragrafo è stato aggiunto il tag <code>list</code>.</p>
-<p>I corpi considerati in fisica possono essere di diversa natura.</p>
+Come per le figure, è possibile aggiungere una didascalia alle tabelle utilizzando il tag <code>#+caption</code> in org-mode.</p><h2 id=liste>Liste <span class=tag><span class=list>list</span></span></h2><p>In Org-mode è possibile attribuire un tag (o anche più di uno) a ciascuna sezione del post. Tuttavia, questi non sono cliccabili. Ad esempio, al titolo di questo paragrafo è stato aggiunto il tag <code>list</code>.</p><p>I corpi considerati in fisica possono essere di diversa natura.</p><ul>
+<li>Corpi <em>puntiformi</em>: dotati di massa ma aventi volume zero (considerati cioè come un punto che non occupa una regione estesa di spazio)</li><li>Corpi <em>estesi</em>: aventi sia massa che volume positivi</li></ul><p>Finora abbiamo trattato</p><div class=task-list>
 <ul>
-<li>Corpi <em>puntiformi</em>: dotati di massa ma aventi volume zero (considerati cioè come un punto che non occupa una regione estesa di spazio)</li>
-<li>Corpi <em>estesi</em>: aventi sia massa che volume positivi</li>
-</ul>
-<p>Finora abbiamo trattato</p>
-<div class=task-list>
-<ul>
-<li><input checked disabled type=checkbox> Corpi puntiformi</li>
-<li><input disabled type=checkbox> Corpi estesi</li>
-</ul>
-</div>
-<p>La sintassi di Org per creare le cosiddette <em>TODO list</em> è la stessa di Markdown. Attenzione al fatto che la classe <code>task-list</code> non è automaticamente esportata<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup> in Black Friday, ed è pertanto necessario indicarla esplicitamente all&rsquo;inizio della lista, ad esempio con</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-org data-lang=org>#+ attr_html: :class task-list
-<span class=k>- [X]</span> Corpi puntiformi
-<span class=k>- [ ]</span> Corpi estesi
-</code></pre></div><p>In questo modo è possibile ad esempio rimuovere i pallini prima di ciascun elemento impostando lo stile nel file css.</p>
-<section class=footnotes role=doc-endnotes>
+<li><input checked disabled type=checkbox> Corpi puntiformi</li><li><input disabled type=checkbox> Corpi estesi</li></ul></div><p>La sintassi di Org per creare le cosiddette <em>TODO list</em> è la stessa di Markdown. Attenzione al fatto che la classe <code>task-list</code> non è automaticamente esportata<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup> in Black Friday, ed è pertanto necessario indicarla esplicitamente all&rsquo;inizio della lista, ad esempio con</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-org data-lang=org><span class=line><span class=cl>#+ attr_html: :class task-list
+</span></span><span class=line><span class=cl><span class=k>- [X]</span> Corpi puntiformi
+</span></span><span class=line><span class=cl><span class=k>- [ ]</span> Corpi estesi
+</span></span></code></pre></div><p>In questo modo è possibile ad esempio rimuovere i pallini prima di ciascun elemento impostando lo stile nel file css.</p><section class=footnotes role=doc-endnotes>
 <hr>
 <ol>
 <li id=fn:1 role=doc-endnote>
-<p>Reperibile al link <a href=https://textext.github.io/textext/>https://textext.github.io/textext/</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
-</li>
-<li id=fn:2 role=doc-endnote>
-<p>Il fattore di scala <code>1.21em</code> è il default di KaTeX (<a href=https://katex.org/docs/font.html#font-size-and-lengths>docs</a>)&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
-</li>
-<li id=fn:3 role=doc-endnote>
-<p>Vedi <a href=https://github.com/gohugoio/hugo/issues/6837>hugo issue 6837</a>&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
-</li>
-</ol>
-</section>
-</div>
-</div>
-<hr>
+<p>Reperibile al link <a href=https://textext.github.io/textext/>https://textext.github.io/textext/</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2 role=doc-endnote>
+<p>Il fattore di scala <code>1.21em</code> è il default di KaTeX (<a href=https://katex.org/docs/font.html#font-size-and-lengths>docs</a>)&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:3 role=doc-endnote>
+<p>Vedi <a href=https://github.com/gohugoio/hugo/issues/6837>hugo issue 6837</a>&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></section></div></div><hr>
 <p style=font-size:smaller>
 Built with <a href=https://github.com/kaushalmodi/ox-hugo><b>ox-hugo</b></a> for Emacs/Org-mode.
 Page created/modified in commit <code><a href=https://github.com/tiZero/org-notes/commit/973ef0253dda6f43ea798b0f7920d29a88b0a9c3>973ef02</a></code> on <b>24/02/2022</b>.
-</p>
-</body>
-</html>
+</p></body></html>
