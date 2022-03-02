@@ -2,61 +2,101 @@
 <html lang="it">
 <head>
 <meta charset="utf-8"/>
-<title>Presentazione di prova</title>
+<title>Poligoni circoscritti</title>
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
 <link rel="stylesheet" href="../js/reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="../js/reveal.js/dist/theme/white.css" id="theme"/>
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<link rel="stylesheet" href="../js/reveal.js/dist/theme/solarized.css" id="theme"/>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide">
-<h1 class="title">Presentazione di prova</h1><p class="date">Created: 2022-02-27 dom 00:10</p>
+<h1 class="title">Poligoni circoscritti</h1><p class="date">2C Liceo Scientifico</p>
 </section>
 
 <section>
-<section id="slide-orgbd2167a">
-<h2 id="orgbd2167a">Teorema 1</h2>
+<section id="slide-org13f5e64">
+<h2 id="org13f5e64">Definizione</h2>
 <p>
-Gli assi dei lati di un poligono inscritto in una circonferenza passano tutti per uno stesso punto.
+Un poligono si dice <b>circoscritto</b> a una circonferenza se <b>tutti i suoi lati sono tangenti</b> alla circonferenza. In tal caso la circonferenza si dice inscritta nel poligono.
 </p>
 </section>
-<section id="slide-orgc5f975b">
-<h3 id="orgc5f975b">Dimostrazione 1/3</h3>
+<section id="slide-org566949b">
+<h3 id="org566949b">Esempio: quadrilatero inscritto</h3>
+<iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/jhhbtgxs/width/900/height/500/border/fdf6e3/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px" style="border-radius: 0.2em;" data-preload></iframe>
+</section>
+</section>
+<section>
+<section id="slide-org816c444">
+<h2 id="org816c444">Proprietà</h2>
 <p>
-Consideriamo due vertici \(A\) e \(B\) del poligono (anche non consecutivi).
+Se un poligono è circoscritto a una circonferenza di centro \(O\), allora il punto \(O\) è <b>equidistante</b> dai lati del poligono (la distanza è il raggio della circonferenza).
 </p>
 
-<p>
-Vogliamo dimostrare che il centro \(O\) della circonferenza circoscritta appartiene all&rsquo;asse del segmento \(AB\).
-</p>
-</section>
-<section id="slide-org6fc97b3">
-<h3 id="org6fc97b3">Dimostrazione 2/3</h3>
-<p>
-Poiché il poligono è inscritto, i punti \(A\) e \(B\) si trovano entrambi sulla circonferenza di centro \(O\).
-</p>
 
 <p>
-In particolare abbiamo che \[AO \cong OB\]
+Di conseguenza: <i>le <b>bisettrici degli angoli interni</b> del poligono passano tutte per il centro \(O\).</i>
+</p>
+
+<p class="fragment">
+Vale anche il viceversa&#x2026;
 </p>
 </section>
-<section id="slide-org240d75b">
-<h3 id="org240d75b">Dimostrazione 3/3</h3>
+<section id="slide-orgf1fb7ec">
+<h3 id="orgf1fb7ec">Condizione di circoscrivibilità</h3>
 <p>
-Poiché l&rsquo;asse del segmento \(AB\) è il luogo dei punti equidistanti dagli estremi, il teorema è dimostrato.
+Un poligono può essere circoscritto a una circonferenza <b>se e solo se</b> le bisettrici dei suoi angoli interni si incontrano in uno stesso punto.
+</p>
+
+<p class="fragment (appear)">
+Tale punto è il centro della circonferenza inscritta e prende il nome di <b>incentro del poligono</b>.
 </p>
 </section>
 </section>
 <section>
-<section id="slide-org4cc56d1">
-<h2 id="org4cc56d1">GeoGebra (TH1)</h2>
-<iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/ye9gfsmp/width/800/height/450/border/ffffff/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="800px" height="450px" style="border:0px;" data-preload></iframe>
+<section id="slide-orgf011762">
+<h2 id="orgf011762">Esempi: triangoli e quadrilateri</h2>
+<iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/d5qegu65/width/900/height/500/border/fdf6e3/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px" style="border-radius: 0.2em;" data-preload></iframe>
+</section>
+<section id="slide-orgad3f719">
+<h3 id="orgad3f719">Triangoli</h3>
+<p>
+<b><b>Qualsiasi triangolo è circoscrivibile</b></b>
+</p>
+
+<p>
+Infatti, per la proprietà transitiva della congruenza, le bisettrici dei tre angoli interni si incontrano in un unico punto (l&rsquo;<b>incentro</b> del triangolo).
+</p>
+</section>
+<section id="slide-org26426b9">
+<h3 id="org26426b9">Quadrilateri</h3>
+<p>
+Non tutti i quadrilateri sono circoscrivibili.
+</p>
+
+<p class="fragment">
+Esempi di quadrilateri circoscrivibili: <b><b>quadrati</b></b>, <b><b>rombi</b></b> e, più in generale, <b><b>aquiloni</b></b>.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org7c67283">
+<h2 id="org7c67283">Teorema (7 + 8)</h2>
+<p>
+Caratterizzazione dei quadrilateri circoscrivibili.
+</p>
+
+<p class="fragment">
+<i>Un quadrilatero è circoscrivibile a una circonferenza <b><b>se e solo se</b></b> la somma di due lati opposti è congruente alla somma degli altri due.</i>
+</p>
+</section>
+<section id="slide-org907ed6d">
+<h3 id="org907ed6d">Test con GeoGebra</h3>
+<iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/pg7jfwwe/width/900/height/500/border/fdf6e3/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px" style="border-radius: 0.2em;" data-preload></iframe>
 </section>
 </section>
 </div>
