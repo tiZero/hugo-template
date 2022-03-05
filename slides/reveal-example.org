@@ -1,16 +1,17 @@
 #+TITLE: Poligoni circoscritti
-#+AUTHOR:
+#+AUTHOR: 2C Liceo Scientifico
+#+DATE: 2 marzo 2022
 #+LANGUAGE: it
 #+OPTIONS: toc:nil num:nil reveal_slide_number:nil
 
-#+REVEAL_ROOT: ../js/reveal.js
-#+REVEAL_THEME: solarized
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@4.3.0
+#+REVEAL_THEME: ../css/metropolis.css
 #+REVEAL_TRANS: slide
 
 * Definizione
 Un poligono si dice *circoscritto* a una circonferenza se *tutti i suoi lati sono tangenti* alla circonferenza. In tal caso la circonferenza si dice inscritta nel poligono.
 ** Esempio: quadrilatero inscritto
-#+reveal_html: <iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/jhhbtgxs/width/900/height/500/border/fdf6e3/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px" style="border-radius: 0.2em;" data-preload></iframe>
+#+reveal_html: <iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/jhhbtgxs/width/900/height/500/border/ffffff/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px" style="border: 0px; border-radius: 0.2em;" data-preload></iframe>
 * Proprietà
 Se un poligono è circoscritto a una circonferenza di centro $O$, allora il punto $O$ è *equidistante* dai lati del poligono (la distanza è il raggio della circonferenza).
 
@@ -25,7 +26,7 @@ Un poligono può essere circoscritto a una circonferenza *se e solo se* le biset
 #+attr_reveal: :frag (appear)
 Tale punto è il centro della circonferenza inscritta e prende il nome di *incentro del poligono*.
 * Esempi: triangoli e quadrilateri
-#+reveal_html: <iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/d5qegu65/width/900/height/500/border/fdf6e3/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px" style="border-radius: 0.2em;" data-preload></iframe>
+#+reveal_html: <iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/d5qegu65/width/900/height/500/border/ffffff/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px" style="border: 0px; border-radius: 0.2em;" data-preload></iframe>
 ** Triangoli
 **Qualsiasi triangolo è circoscrivibile**
 
@@ -41,8 +42,4 @@ Caratterizzazione dei quadrilateri circoscrivibili.
 #+attr_reveal: :frag t
 /Un quadrilatero è circoscrivibile a una circonferenza **se e solo se** la somma di due lati opposti è congruente alla somma degli altri due./
 ** Test con GeoGebra
-#+reveal_html: <iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/pg7jfwwe/width/900/height/500/border/fdf6e3/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px" style="border-radius: 0.2em;" data-preload></iframe>
-* COMMENT Local Variables
-# Local Variables:
-# org-re-reveal-progress: nil
-# End:
+#+reveal_html: <iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/pg7jfwwe/width/900/height/500/border/ffffff/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px" style="border: 0px; border-radius: 0.2em;" data-preload></iframe>
