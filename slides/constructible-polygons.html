@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<title>Poligoni costruibili</title>
+<meta name="author" content="2C Liceo Scientifico"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.0/dist/reveal.css"/>
+
+<link rel="stylesheet" href="../css/metropolis.css" id="theme"/>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">Poligoni costruibili</h1><h2 class="author">2C Liceo Scientifico</h2><h2 class="date">16 marzo 2022</h2>
+</section>
+
+<section>
+<section id="slide-orgd2b9a00">
+<h2 id="orgd2b9a00">Costruzioni con riga e compasso</h2>
+<p>
+Definizione astratta di <i>riga</i> e di <i>compasso</i>
+</p>
+<ul>
+<li class="fragment appear">La riga è infinita e non graduata. Può essere utilizzata per tracciare (o prolungare indefinitamente) il segmento tra due punti con precisione infinita</li>
+<li class="fragment appear">Il compasso può essere aperto in modo da ottenere qualsiasi raggio. Permette di tracciare una circonferenza a partire dal centro e da un punto su di essa</li>
+
+</ul>
+</section>
+<section id="slide-orgae23e0b">
+<h3 id="orgae23e0b">Operazioni consentite</h3>
+<p>
+Una <i>costruzione con riga e compasso</i> parte da una configurazione di punti nel piano e consiste nell&rsquo;eseguire un numero finito di operazioni del tipo seguente:
+</p>
+<ul>
+<li class="fragment appear">Dati due punti \(A\) e \(B\), tracciare la retta \(AB\) (con la riga)</li>
+<li class="fragment appear">Dati due punti \(O\) e \(P\), tracciare la circonferenza di centro \(O\) e passante per \(P\) (con il compasso)</li>
+<li class="fragment appear">Individuare gli eventuali punti di intersezione tra due rette, tra una circonferenza e una retta o tra due circonferenze</li>
+
+</ul>
+</section>
+<section id="slide-org8c705f5">
+<h3 id="org8c705f5">Esempi di costruzioni</h3>
+<ul>
+<li>Asse (e punto medio) di un segmento</li>
+<li>Triangolo equilatero</li>
+<li>Bisettrice di un angolo</li>
+<li>Retta perpendicolare</li>
+
+</ul>
+</section>
+<section id="slide-orge77f8d6">
+<h3 id="orge77f8d6">GeoGebra</h3>
+<iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/jmsgq8nw/width/900/height/540/border/ffffff/sfsb/false/smb/false/stb/true/stbh/false/ai/false/asb/true/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="540px" style="border: 0px; border-radius: 0.2em;" data-preload></iframe>
+
+</section>
+</section>
+<section>
+<section id="slide-orgebc454d">
+<h2 id="orgebc454d">Poligoni regolari</h2>
+<p>
+I seguenti <i>poligoni regolari</i> sono costruibili con riga e compasso:
+</p>
+<ul>
+<li>triangolo equilatero</li>
+<li>quadrato</li>
+<li>pentagono regolare</li>
+<li>esagono regolare</li>
+
+</ul>
+</section>
+<section id="slide-orge55b41e">
+<h3 id="orge55b41e">GeoGebra</h3>
+<iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/jmsgq8nw/width/900/height/540/border/ffffff/sfsb/false/smb/false/stb/true/stbh/false/ai/false/asb/true/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="540px" style="border: 0px; border-radius: 0.2em;" data-preload></iframe>
+</section>
+<section id="slide-org9b92765">
+<h3 id="org9b92765">Domande</h3>
+<ul>
+<li class="fragment appear">Tutti i poligoni regolari sono costruibili con riga e compasso?</li>
+<li class="fragment appear">Se la risposta è negativa, quali sono costruibili e quali no?</li>
+<li class="fragment appear">In particolare: se il poligono regolare di \(N\) lati è costruibile, quali sono le proprietà del numero \(N\)?</li>
+
+</ul>
+</section>
+<section id="slide-orgb72b8c9">
+<h3 id="orgb72b8c9">Carl Friederich Gauss (1777-1855)</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Carl_Friedrich_Gauss_1840_by_Jensen.jpg/1200px-Carl_Friedrich_Gauss_1840_by_Jensen.jpg" alt="Carl Friedrich Gauss 1840 by Jensen.jpg" height="400px">
+<p>
+Grande matematico tedesco, nel 1798 scrive un importante libro di teoria dei numeri: <i>Disquisitiones Arithmeticae</i>
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgb0dd3cf">
+<h2 id="orgb0dd3cf">Teorema (di Gauss-Wantzel)</h2>
+<p>
+Nelle <i>Disquisitiones Arithmeticae</i> è enunciato il teorema:
+</p>
+
+<p>
+Un poligono regolare di \(N\) lati è costruibile con riga e compasso se e solo se la scomposizione in fattori del numero \(N\) è \[N = 2^k \cdot p_1 \cdot p_2 \cdot \cdots \cdot p_t\]
+dove
+</p>
+<ul>
+<li>il primo fattore \(2^k\) è una potenza di \(2\)</li>
+<li>i fattori \(p_1, p_2, \ldots, p_t\) sono <b>numeri primi di Fermat</b> distinti</li>
+
+</ul>
+</section>
+<section id="slide-orgd52312e">
+<h3 id="orgd52312e">Numeri di Fermat</h3>
+<p>
+Un <i>numero di Fermat</i> è un numero intero positivo del tipo \[F_n = 2^{2^n} + 1\]
+</p>
+
+<p class="fragment">
+I primi sei numeri Fermat sono \[
+\begin{array}{l|l}
+F_0 = 2^{2^0} + 1 = 3 & F_3 = 2^{2^3} + 1 = 257\\
+F_1 = 2^{2^1} + 1 = 5 & F_4 = 2^{2^4} + 1 = 65\,537\\
+F_2 = 2^{2^2} + 1 = 17 & F_5 = 2^{2^5} + 1 = 4\,294\,967\,297
+\end{array}\]
+</p>
+</section>
+<section id="slide-org59fb110">
+<h3 id="org59fb110">Numeri primi di Fermat</h3>
+<p>
+Un <i>primo di Fermat</i> è un numero di Fermat che è anche primo.
+</p>
+<ul>
+<li class="fragment appear">\(F_0, F_1, F_2, F_3, F_4\) sono primi di Fermat</li>
+<li class="fragment appear">Il matematico francese Pierre de Fermat (\(\sim\) 1600) congetturò che \(F_n\) fosse un numero primo per tutti i valori di \(n\)</li>
+<li class="fragment appear">Nel 1732 Leonard Euler, matematico svizzero, mostrò che \[F_5 =  4\,294\,967\,297 = 641 \cdot 6\,700\,417\] confutando la congettura di Fermat</li>
+<li class="fragment appear">Ad oggi non si conoscono primi di Fermat maggiori di \(F_4\)</li>
+
+</ul>
+</section>
+<section id="slide-org8cb5bb1">
+<h3 id="org8cb5bb1">Conclusioni</h3>
+<p>
+Se \(F_4\) è l&rsquo;ultimo primo di Fermat (congettura), allora il poligono regolare di \(N\) lati è costruibile se e solo se \(N\) è del tipo \[N = 2^k \cdot P\] dove \(P\) è un prodotto di numeri scelti tra \(F_0\), \(F_1\), \(F_2\), \(F_3\), \(F_4\) senza ripetizioni.
+</p>
+
+<ul>
+<li class="fragment appear">I poligoni regolari di \(7\) e \(9\) lati non sono costruibili</li>
+<li class="fragment appear">È possibile costruire il poligono regolare di \(17\) lati</li>
+<li class="fragment appear">Esistono soltanto \(31\) poligoni costruibili con un numero dispari di lati (perché?)</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.0/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.0/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.0/plugin/search/search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.0/plugin/zoom/zoom.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: false,
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+
+transition: 'slide',
+transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealNotes, RevealSearch, RevealZoom ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>
