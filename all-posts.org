@@ -75,6 +75,19 @@ La sintassi di Org per creare le cosiddette /TODO list/ è la stessa di Markdown
 - [ ] Corpi estesi
 #+end_src
 In questo modo è possibile ad esempio rimuovere i pallini prima di ciascun elemento impostando lo stile nel file css.
+* DONE Integrazione con Telegram
+CLOSED: [2022-03-20 dom 19:50]
+:PROPERTIES:
+:EXPORT_FILE_NAME: telegram-trigger
+:END:
+#+begin_description
+Un bot che notifica un canale Telegram a ogni nuovo post pubblicato.
+#+end_description
+Creato canale Telegram con [[https://t.me/+QcNUYOHdOPxlYWVk][invite link]] (le richieste vanno approvate dagli admin). L'idea è creare un bot da zero che sia in grado di
+1. notificare il canale di ogni nuovo contenuto pubblicato sul sito;
+2. gestire i commenti degli utenti.
+
+Una soluzione al primo punto è offerta da [[https://ifttt.com/][IFTTT]] che consente all'applicazione di puntare al file [[https://tizero.github.io/org-notes/index.xml][index.xml]] e di connettersi a una chat di gruppo o a un canale. Il secondo punto può essere ottenuto direttamente con le funzionalità di Telegram associando al canale una chat dedicata.
 * Footnotes
 [fn:1] Reperibile al link [[https://textext.github.io/textext/]]
 [fn:2] Il fattore di scala =1.21em= è il default di KaTeX ([[https://katex.org/docs/font.html#font-size-and-lengths][docs]])
