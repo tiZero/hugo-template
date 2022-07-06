@@ -11,11 +11,17 @@
 
 * Esperienza di insegnamento
 #+REVEAL_HTML: <br>
-#+REVEAL_HTML: <div style="float: left; width: 25%;"><h4>A.S. 2017/18</h4><br><br><h4>A.S. 2018/19</h4><br><br><h4>A.S. 2019/20</h4><br><br><h4>A.S. 2020/21</h4></div>
-#+REVEAL_HTML: <div style="float: right; width: 75%;"><h4><b>I.I.S. Enzo Ferrari di Susa</b></h4><i>Matematica nei corsi serali</i><br><br>
-#+REVEAL_HTML: <h4><b>Liceo Einstein di Torino</b></h4><i>Matematica e Fisica nei corsi serali</i><br><br>
-#+REVEAL_HTML: <h4><b>I.I.S. Curie-Levi di Collegno</b></h4><i>Matematica e Fisica nel Liceo delle Sc. Umane</i><br><br>
-#+REVEAL_HTML: <h4><b>Liceo Einstein di Torino</b></h4><i>Matematica e Fisica nel Liceo Scientifico</i></div>
+#+REVEAL_HTML: A.S. 2017/18 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>I.I.S. Enzo Ferrari di Susa</b><br />
+#+REVEAL_HTML: <div style="font-size: smaller; padding-left: 9.4em; padding-top: 0.4em; padding-bottom: 0.5em;"><i>Matematica nei corsi serali</i></div>
+#+REVEAL_HTML: <br>
+#+REVEAL_HTML: A.S. 2018/19 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Liceo Einstein di Torino</b><br />
+#+REVEAL_HTML: <div style="font-size: smaller; padding-left: 9.4em; padding-top: 0.4em; padding-bottom: 0.5em;"><i>Matematica e Fisica nei corsi serali</i></div>
+#+REVEAL_HTML: <br>
+#+REVEAL_HTML: A.S. 2019/20 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>I.I.S. Curie-Levi di Collegno</b><br />
+#+REVEAL_HTML: <div style="font-size: smaller; padding-left: 9.4em; padding-top: 0.4em; padding-bottom: 0.5em;"><i>Matematica e Fisica nel Liceo delle Scienze Umane</i></div>
+#+REVEAL_HTML: <br>
+#+REVEAL_HTML: A.S. 2020/21 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Liceo Einstein di Torino</b><br />
+#+REVEAL_HTML: <div style="font-size: smaller; padding-left: 9.4em; padding-top: 0.4em; padding-bottom: 0.5em;"><i>Matematica e Fisica nel Liceo Scientifico</i></div>
 
 * Composizione della cattedra 2021/22
 #+REVEAL_HTML: <br>
