@@ -157,6 +157,7 @@ h1.title {
 
 .reveal dt {
   font-weight: bold;
+  padding-bottom: 0.2em;
 }
 
 .reveal dd {
