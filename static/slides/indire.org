@@ -1,0 +1,66 @@
+#+TITLE: Colloquio finale
+#+AUTHOR: Ivo Cicchese
+#+DATE: 9 luglio 2022
+#+LANGUAGE: it
+#+OPTIONS: toc:nil num:nil reveal_slide_number:nil
+
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@4.3.0
+#+REVEAL_THEME: ../css/metropolis.css
+#+REVEAL_TRANS: slide
+#+REVEAL_TITLE_SLIDE: <img class="plain" style="float: right;" src="../images/logo_Curie.png" width="240"><br><h2>%t</h2><h4>Anno di formazione e prova 2021/2022</h4><br><br><h5><i>Docente neoassunto</i></h5><b>%a</b><br><br><h5><i>Classe di concorso</i></h5><b>A-27 Matematica e Fisica</b><br><br><h5><i>Docente tutor</i></h5>prof. <b>Valerio Valiani</b>
+
+* Esperienza di insegnamento
+#+REVEAL_HTML: <br>
+#+REVEAL_HTML: <div style="float: left; width: 25%;"><h4>A.S. 2017/18</h4><br><br><h4>A.S. 2018/19</h4><br><br><h4>A.S. 2019/20</h4><br><br><h4>A.S. 2020/21</h4></div>
+#+REVEAL_HTML: <div style="float: right; width: 75%;"><h4><b>I.I.S. Enzo Ferrari di Susa</b></h4><i>Matematica nei corsi serali</i><br><br>
+#+REVEAL_HTML: <h4><b>Liceo Einstein di Torino</b></h4><i>Matematica e Fisica nei corsi serali</i><br><br>
+#+REVEAL_HTML: <h4><b>I.I.S. Curie-Levi di Collegno</b></h4><i>Matematica e Fisica nel Liceo delle Sc. Umane</i><br><br>
+#+REVEAL_HTML: <h4><b>Liceo Einstein di Torino</b></h4><i>Matematica e Fisica nel Liceo Scientifico</i></div>
+
+* Composizione della cattedra 2021/22
+#+REVEAL_HTML: <br>
+#+REVEAL_HTML: <h4><b>Docenza di Matematica e Fisica</b></h4>
+#+REVEAL_HTML: <ul><li>
+#+REVEAL_HTML: 2C Liceo Scientifico <span style="font-size: smaller; padding-left: 1em;"><i>28 allievi di cui 1 con B.E.S.</i></span></li>
+#+REVEAL_HTML: <li>
+#+REVEAL_HTML: 3F Liceo Scientifico <span style="font-size: smaller; padding-left: 1em;"><i>21 allievi di cui 1 con B.E.S.</i></span></li></ul>
+#+REVEAL_HTML: <br><br>
+#+REVEAL_HTML: <h4><b>Progetti di dipartimento</b></h4>
+#+REVEAL_HTML: <ul><li>
+#+REVEAL_HTML: Sportello pomeridiano<br />
+#+REVEAL_HTML: <span style="font-size: smaller;"><i>Rivolto agli studenti dal primo al quarto anno del Liceo Scientifico</i></span></li>
+#+REVEAL_HTML: <li>Olimpiadi della Matematica<br />
+#+REVEAL_HTML: <span style="font-size: smaller;"><i>Coordinamento dei Giochi di Archimede e della Gara di Febbraio</i></span></li>
+#+REVEAL_HTML: </li></ul>
+
+* Competenze didattiche dal bilancio iniziale
+#+REVEAL_HTML: <br>
+#+REVEAL_HTML: <h4><b>Situazioni di apprendimento</b></h4>
+#+REVEAL_HTML: <ul><li>
+#+REVEAL_HTML: Utilizzare le tecnologie e i linguaggi digitali per migliorare i processi di apprendimento</li>
+#+REVEAL_HTML: <li>Progettare attività in cui l'allievo sia al centro dei processi di apprendimento e di costruzione delle conoscenze</li></ul>
+#+REVEAL_HTML: <br><br>
+#+REVEAL_HTML: <h4><b>Approccio formativo</b></h4>
+#+REVEAL_HTML: <ul><li>
+#+REVEAL_HTML: Progettare attività di verifica delle competenze trasversali: problem solving, pensiero strategico, autonomia, ecc.</li></ul>
+
+* Progettazione di un'attività didattica
+#+REVEAL_HTML: <br />
+- Titolo ::
+  #+REVEAL_HTML: La Legge dei Grandi Numeri<br /><i>Simulazioni numeriche con GeoGebra</i>
+#+REVEAL_HTML: <br /><br />
+- Nucleo tematico :: Dati e previsioni: probabilità e statistica
+#+REVEAL_HTML: <br /><br />
+- Classe :: 2C del Liceo Scientifico
+#+REVEAL_HTML: <br /><br />
+- Tempistiche :: 5 ore di attività in classe, di cui 2 di laboratorio (GeoGebra)
+
+** Competenze chiave e obiettivi
+
+- Competenza *matematica* e competenza *digitale*
+- Capacità di *imparare ad imparare*
+
+#+REVEAL_HTML: <br /><br />
+#+REVEAL_HTML: <h4><b>Obiettivi di apprendimento</b></h4>
+#+REVEAL_HTML: <p style="padding-left: 1.5em;">Acquisire familiarità con la definizione di probabilità classica di un evento e utilizzare questo strumento nella risoluzione di alcuni problemi di scelta.</p>
+#+REVEAL_HTML: <p style="padding-left: 1.5em;">Impiegare strategie per costruire micro-apparati sperimentali all'interno di GeoGebra con i quali formulare congetture, verificare ipotesi, risolvere problemi finiti.</p>
