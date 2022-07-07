@@ -27,9 +27,9 @@
 #+REVEAL_HTML: <br>
 #+REVEAL_HTML: <h4><b>Docenza di Matematica e Fisica</b></h4>
 #+REVEAL_HTML: <ul><li>
-#+REVEAL_HTML: 2C Liceo Scientifico <span style="font-size: smaller; padding-left: 1em;"><i>28 allievi di cui 1 con B.E.S.</i></span></li>
+#+REVEAL_HTML: 2C Liceo Scientifico <span style="font-size: smaller; padding-left: 1em;"><i>28 allievi</i></span></li>
 #+REVEAL_HTML: <li>
-#+REVEAL_HTML: 3F Liceo Scientifico <span style="font-size: smaller; padding-left: 1em;"><i>21 allievi di cui 1 con B.E.S.</i></span></li></ul>
+#+REVEAL_HTML: 3F Liceo Scientifico <span style="font-size: smaller; padding-left: 1em;"><i>21 allievi</i></span></li></ul>
 #+REVEAL_HTML: <br><br>
 #+REVEAL_HTML: <h4><b>Progetti di dipartimento</b></h4>
 #+REVEAL_HTML: <ul><li>
@@ -70,3 +70,21 @@
 #+REVEAL_HTML: <h4><b>Obiettivi di apprendimento</b></h4>
 #+REVEAL_HTML: <p style="padding-left: 1.5em;">Acquisire familiarità con la definizione di probabilità classica di un evento e utilizzare questo strumento nella risoluzione di alcuni problemi di scelta.</p>
 #+REVEAL_HTML: <p style="padding-left: 1.5em;">Impiegare strategie per costruire micro-apparati sperimentali all'interno di GeoGebra con i quali formulare congetture, verificare ipotesi, risolvere problemi finiti.</p>
+
+** Strumenti digitali
+
+Ciascun allievo ha utilizzato l'app di *GeoGebra Classico 6* su un notebook del laboratorio mobile in dotazione alla scuola
+#+REVEAL_HTML: <p style="margin-top: 1.5em; margin-bottom: 0.5em;">L'ambiente di <b>GeoGebra</b> è il punto focale della progettazione</p>
+
+- È un software "sufficientemente rudimentale"
+- Si presta ad essere hackerato
+- Offre un semplice linguaggio di scripting nativo con cui programmare gli oggetti al suo interno
+- Stimola i processi di creatività e di problem solving
+
+** Sperimentazione: lancio di 2 dadi
+#+REVEAL_HTML: <br />
+#+REVEAL_HTML: <iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/mh3c3xtf/width/900/height/500/border/ffffff/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px" style="box-shadow: 0 0 10px rgba(0,0,0,0.15); border: none; border-radius: 0.2em;" data-preload></iframe>
+
+** Esplorazione: tiro al bersaglio
+#+REVEAL_HTML: <br />
+#+REVEAL_HTML: <iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/p8ww7nwx/width/900/height/500/border/ffffff/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px" style="box-shadow: 0 0 10px rgba(0,0,0,0.15); border: none; border-radius: 0.2em;" data-preload></iframe>
