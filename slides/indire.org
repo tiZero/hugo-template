@@ -85,6 +85,31 @@ Ciascun allievo ha utilizzato l'app di *GeoGebra Classico 6* su un notebook del 
 #+REVEAL_HTML: <br />
 #+REVEAL_HTML: <iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/mh3c3xtf/width/900/height/500/border/ffffff/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px" style="box-shadow: 0 0 10px rgba(0,0,0,0.15); border: none; border-radius: 0.2em;" data-preload></iframe>
 
+** Metodologie didattiche
+
+#+REVEAL_HTML: <ul><li>Apprendimento costruttivo/significativo
+#+REVEAL_HTML: <p style="font-size: smaller; margin-top: 0.4em; margin-bottom: 0px;">Costruzione di significati in un <b>laboratorio di Matematica</b><br />Fonti d'ispirazione: <i>La Matematica per il cittadino, progetto M&#64;t.abel</i></p></li>
+#+REVEAL_HTML: <li>Ricerca di gruppo
+#+REVEAL_HTML: <p style="font-size: smaller; margin-top: 0.4em; margin-bottom: 0px;">Risoluzione di problemi &quot;aperti&quot; e di compiti di realtà/autentici</p></li>
+#+REVEAL_HTML: <li>Didattica laboratoriale e per scoperta</li>
+#+REVEAL_HTML: <li>Didattica metacognitiva
+#+REVEAL_HTML: <p style="font-size: smaller; margin-top: 0.4em; margin-bottom: 0px;">Utilizzo di strumenti per costruire nuove conoscenze partendo da domande, investigazioni, problemi</p></li>
+#+REVEAL_HTML: </ul>
+
+** Valutazione formativa
+
+Gli allievi hanno lavorato in gruppo su alcuni problemi autentici:
+#+REVEAL_HTML: <div style="font-size: smaller; margin-top: -0.5em; margin-bottom: 1.8em;">
+1. /Progettare una simulazione della legge dei Grandi Numeri nel caso in cui lo spazio degli eventi è continuo/
+2. /Stimare l'area di una figura geometrica piana utilizzando i metodi del calcolo delle probabilità/
+3. /Approssimare $\pi$ con una successione di numeri razionali/
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <h4><b>Criteri di valutazione</b></h4>
+#+REVEAL_HTML: <div style="font-size: smaller;">
+Ricerca di informazioni e risorse, uso efficace di conoscenze e abilità pregresse, creatività e collaborazione
+#+REVEAL_HTML: </div>
+
 ** Esplorazione: tiro al bersaglio
 #+REVEAL_HTML: <br />
 #+REVEAL_HTML: <iframe scrolling="no" data-src="https://www.geogebra.org/material/iframe/id/p8ww7nwx/width/900/height/500/border/ffffff/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px" style="box-shadow: 0 0 10px rgba(0,0,0,0.15); border: none; border-radius: 0.2em;" data-preload></iframe>
